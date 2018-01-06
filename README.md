@@ -3,6 +3,7 @@
 ASP.NET MVC multi-tier web application
 
 **Project Description**
+
 This solution is a collection of Visual Studio projects with a Framework based on:
 - ASP.NET MVC with Razor
 - JQuery
@@ -10,13 +11,14 @@ This solution is a collection of Visual Studio projects with a Framework based o
 - EntityFramework
 
 
-** Additional Information **
+**Additional Information**
+
 This is the Back-End Roadmap:
 - VB-to-C# conversion
 - EntityFramework 6 integration
 - OData and WebAPI
 
-This is the Front-End Roadmap:
+**This is the Front-End Roadmap:**
 - VB-to-C# conversion
 - SPA and Bootstrap template integration
 - IoC framework integration
