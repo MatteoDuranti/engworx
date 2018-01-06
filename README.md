@@ -18,7 +18,7 @@ This is the Back-End Roadmap:
 - EntityFramework 6 integration
 - OData and WebAPI
 
-**This is the Front-End Roadmap:**
+This is the Front-End Roadmap:
 - VB-to-C# conversion
 - SPA and Bootstrap template integration
 - IoC framework integration
@@ -97,8 +97,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 See also the list of [contributors](https://github.com/MatteoDuranti/engworx/graphs/contributors) who participated in this project.
 
 Main Contributors:
-Raffaele Ausiello
-Daniele Perugini
+- Raffaele Ausiello
+- Daniele Perugini
 
 ## License
 
