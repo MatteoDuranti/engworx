@@ -1,0 +1,1984 @@
+/*********************************************
+	PAGINA DI LOGIN
+*********************************************/
+#loginBody
+{
+    width: 100%;
+    text-align: center;
+}
+#loginBody #tabLogin
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+#loginBody #tabLogin .firstClo
+{
+    width: 100px;
+}
+#loginBody #tabLogin .secondCol
+{
+    width: 170px;
+}
+#loginBody #tabLogin #company
+{
+    width: 30px;
+    text-transform: uppercase;
+}
+#loginBody #tabLogin #username
+{
+    width: 80px;
+    text-transform: uppercase;
+}
+#loginBody #tabLogin #password
+{
+    width: 130px;
+}
+#loginBody #tabStatus
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+
+/*********************************************
+	HOMEPAGE
+*********************************************/
+#homePageBody
+{
+    width: 100%;
+    height: 100%;
+}
+#homePageBody #alertList
+{
+    text-align: left;
+    padding-left: 100px;
+}
+#homePageBody #alertList li
+{
+    padding-bottom: 8px;
+}
+
+
+/*********************************************
+	UTENTI -> PAGINA DI RICERCA UTENTI
+*********************************************/
+#userSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#userSearchBody #tabUserSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 50%;
+}
+#userSearchBody #tabUserSearch tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	UTENTI -> PAGINA DI LISTA UTENTI
+*********************************************/
+#userListBody
+{
+    width: 100%;
+}
+#userListBody #tabUserList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+
+#userListBody #tabUserList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	UTENTI -> PAGINA DI CREAZIONE E MODIFICA UTENTE
+*********************************************/
+#userDetailBody
+{
+    width: 100%;
+}
+#userDetailBody #tabUserDetail
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#userDetailBody #tabUserDetail tr
+{
+    height: 22px;
+}
+#userDetailBody #tabUserDetailButton
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#userDetailBody #tabUserDetailButton tr
+{
+    height: 22px;
+}
+#userDetailBody #CODUSR
+{
+    text-transform: uppercase;
+}
+#userDetailBody #DESFSTNAMUSR
+{
+    text-transform: uppercase;
+}
+#userDetailBody #DESLSTNAMUSR
+{
+    text-transform: uppercase;
+}
+
+
+/*********************************************
+    UTENTI --> ASSOCIAZIONE RUOLO / UTENTE
+*********************************************/
+#associateRolesToUserBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#associateRolesToUserBody #tabAssociateRolesToUserDetail
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#associateRolesToUserBody #tabAssociateRolesToUserDetail tr
+{
+    height: 22px;
+}
+#associateRolesToUserBody #tabAssociateRolesToUserDetail .colField
+{
+    width: 100px;
+}
+#associateRolesToUserBody #tabAssociateRolesToUserLists
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#associateRolesToUserBody #tabAssociateRolesToUserLists th
+{
+    text-align: left;
+}
+#associateRolesToUserBody #tabAssociateRolesToUserLists tfoot
+{
+    text-align: center;
+}
+
+
+/*********************************************
+    UTENTI --> ASSOCIAZIONE RUOLO / UTENTE --> GRIGLIA RUOLI ASSOCIATI
+*********************************************/
+#associateRolesListBody
+{
+    width: 45%;
+}
+#associateRolesListBody #tabAssociateRolesList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#associateRolesListBody #tabAssociateRolesList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+    UTENTI --> ASSOCIAZIONE RUOLO / UTENTE --> GRIGLIA RUOLI Associabili
+*********************************************/
+#associableRolesListBody
+{
+    width: 45%;
+}
+#associableRolesListBody #tabAssociableRolesList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#associableRolesListBody #tabAssociableRolesList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+    UTENTI --> ASSOCIAZIONE RUOLO / GRUPPO ACQUISTO
+*********************************************/
+#associateBuyerToRoleBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#associateBuyerToRoleBody #tabassociateBuyerToRoleDetial
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#associateBuyerToRoleBody #tabassociateBuyerToRoleDetial tr
+{
+    height: 22px;
+}
+#associateBuyerToRoleBody #tabassociateBuyerToRoleDetial .colField
+{
+    width: 100px;
+}
+#associateBuyerToRoleBody #tabAssociateBuyerToRoleLists
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#associateBuyerToRoleBody #tabAssociateBuyerToRoleLists th
+{
+    text-align: left;
+}
+#associateBuyerToRoleBody #tabAssociateBuyerToRoleLists tfoot
+{
+    text-align: center;
+}
+
+
+/*********************************************
+    UTENTI --> ASSOCIAZIONE RUOLO / GRUPPO ACQUISTO --> GRIGLIA GRUPPI ASSOCIATI
+*********************************************/
+#associatedBuyersListBody
+{
+    width: 45%;
+}
+#associatedBuyersListBody #tabAssociatedBuyersList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#associatedBuyersListBody #tabAssociatedBuyersList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+    UTENTI --> ASSOCIAZIONE RUOLO / GRUPPO ACQUISTO --> GRIGLIA GRUPPI ASSOCIABILI
+*********************************************/
+#associableBuyersListBody
+{
+    width: 45%;
+}
+#associableBuyersListBody #tabAssociableBuyersList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#associableBuyersListBody #tabAssociableBuyersList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	RUOLI -> PAGINA DI RICERCA E LISTA RUOLI
+*********************************************/
+#roleSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#roleSearchBody #tabRoleSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#roleSearchBody #tabRoleSearch tr
+{
+    height: 22px;
+}
+#roleSearchBody #tabRoleSearch tr td.firstCol
+{
+    width: 150px;
+}
+#roleSearchBody #tabRoleSearch tr td.secondCol
+{
+    width: 200px;
+}
+#roleSearchBody #tabRoleSearch tr td.thirdCol
+{
+    width: 150px;
+}
+
+
+/*********************************************
+	RUOLI -> PAGINA DI LISTA RUOLI
+*********************************************/
+#roleListBody
+{
+    width: 70%;
+}
+#roleListBody #tabRolesList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 90%;
+}
+#roleListBody #tabRolesList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	RUOLI -> PAGINA DI CREAZIONE E MODIFICA RUOLO
+*********************************************/
+#roleDetailBody
+{
+    width: 100%;
+}
+#roleDetailBody #tabRoleDetail
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#roleDetailBody #tabRoleDetail tr
+{
+    height: 22px;
+}
+#roleDetailBody #tabRoleDetailButton
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#roleDetailBody #tabRoleDetailButton tr
+{
+    height: 22px;
+}
+#roleDetailBody #CODROL
+{
+    text-transform: uppercase;
+}
+#roleDetailBody #DESROL
+{
+    text-transform: uppercase;
+}
+
+
+/*********************************************
+	RUOLI -> ASSOCIAZIONE FUNZIONI
+*********************************************/
+#roleFunctionSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#roleFunctionSearchBody #tabRoleFunctionSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 40%;
+}
+#roleFunctionSearchBody #tabRoleFunctionSearch tr
+{
+    height: 22px;
+}
+#roleFunctionSearchBodyBtn
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#roleFunctionSearchBodyBtn table
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 40%;
+}
+
+
+/*********************************************
+	RUOLI -> LISTA ASSOCIAZIONE FUNZIONI
+*********************************************/
+#roleFunctionListBody
+{
+    width: 100%;
+}
+#roleFunctionListBody #tabRoleFunctionList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#roleFunctionListBody #tabRoleFunctionList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	DIPENDENTI -> RICERCA
+*********************************************/
+#EmployeeSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#EmployeeSearchBody #tabEmployeeSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#EmployeeSearchBody #tabEmployeeSearch #employeeParameters_SearchParameters_CODCRWMEM
+{
+    width: 60px;
+}
+#employeeParameters_SearchParameters_CODCRWMEM, #employeeParameters_SearchParameters_NAMFSTNAM, #employeeParameters_SearchParameters_NAMLSTNAM
+{
+    text-transform: uppercase;
+}
+#EmployeeSearchBody #tabEmployeeSearch tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	DIPENDENTI -> LISTA
+*********************************************/
+#employeeListBody
+{
+    width: 100%;
+}
+#employeeListBody #tabEmployeeList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 80%;
+}
+#employeeListBody #tabEmployeeList tr
+{
+    height: 22px;
+}
+
+
+/****************************************************
+	Employee -> Dettagli / Diario Assenze / Ore Volo
+*****************************************************/
+#EmployeeDetailBody
+{
+    width: 80%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#EmployeeDetailBody #tabEmployeeDetail
+{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: -1%;
+    margin-bottom: 0%;
+    width: 100%;
+}
+#EmployeeDetailBody #tabEmployeeDetail tr
+{
+    height: 15px;
+}
+#adiv
+{
+    width: 100%;
+}
+#AbsenceListBody #tabAbsenceList
+{
+    width: 100%;
+}
+#odiv
+{
+    width: 100%;
+}
+#FligthListBody
+{
+    width: 100%;
+}
+#FligthListBody #tabFlthrsList
+{
+    float: left;
+    width: 100%;
+}
+
+
+/*********************************************
+	PARAM -> PAGINA DI RICERCA E LISTA PARAMETRI
+*********************************************/
+#paramSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#paramSearchBody #tabParamSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 40%;
+}
+#paramSearchBody #tabParamSearch tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	PARAM -> PAGINA DI LISTA PARAMETRI
+*********************************************/
+#paramListBody
+{
+    width: 100%;
+}
+#paramListBody #tabParamList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 90%;
+}
+#paramListBody #tabParamList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	PARAM -> PAGINA DI CREAZIONE E MODIFICA PARAMETRO
+*********************************************/
+#paramDetailBody
+{
+    width: 100%;
+}
+#paramDetailBody #tabParamDetail
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#paramDetailBody #tabParamDetail tr
+{
+    height: 22px;
+}
+#paramDetailBody #tabParamDetailButton
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#paramDetailBody #tabParamDetailButton tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	CERTIFICATI -> PAGINA DI RICERCA
+*********************************************/
+#certificateSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#certificateSearchBody #tabCertificateSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#certificateSearchBody #tabCertificateSearch tr
+{
+    height: 22px;
+}
+#certificateSearchBody #parameters_SearchParameters_CODCRWMEM, #certificateSearchBody #parameters_NAMFSTNAM, #certificateSearchBody #parameters_NAMLSTNAM
+{
+    text-transform: uppercase;
+}
+
+
+/*********************************************
+	CERTIFICATI -> PAGINA DI LISTA
+*********************************************/
+#certificateListBody
+{
+    width: 100%;
+}
+#certificateListBody #tabCertificateList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 80%;
+}
+#certificateListBody #tabCertificateList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	CERTIFICATI -> CREAZIONE E MODIFICA
+*********************************************/
+#certificateDetailBody
+{
+    width: 100%;
+}
+#certificateDetailBody #tabDocumentOrigDetail, #certificateDetailBody #tabDocumentJustifyDetail, #certificateDetailBody #tabDocumentDatBegEnd, #certificateDetailBody #tabDocumentDatRetCC, #certificateDetailBody #tabDocumentDatRet, #certificateDetailBody #tabDocumentCertificateDetail, #certificateDetailBody #tabDocumentCertificateDetail2, #certificateDetailBody #tabDocumentJustifyDetail3, #certificateDetailBody #tabDocumentJustifyDetail2, #certificateDetailBody #tabDocumentJustifyDetail4, #certificateDetailBody #tabDocumentChildDetail, #certificateDetailBody #tabDocumentPaperDetail, #certificateDetailBody #ListOfAnomalies, #certificateDetailBody #ListOfBarcodes
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+}
+#certificateDetailBody #tabDocumentOrigDetail tr, #certificateDetailBody #tabDocumentJustifyDetail tr, #certificateDetailBody #tabDocumentDatBegEnd tr, #certificateDetailBody #tabDocumentDatRetCC tr, #certificateDetailBody #tabDocumentDatRet tr, #certificateDetailBody #tabDocumentCertificateDetail tr, #certificateDetailBody #tabDocumentCertificateDetail2 tr, #certificateDetailBody #tabDocumentJustifyDetail3, #certificateDetailBody #tabDocumentJustifyDetail2 tr, #certificateDetailBody #tabDocumentJustifyDetail4 tr, #certificateDetailBody #tabDocumentChildDetail tr, #certificateDetailBody #tabDocumentPaperDetail tr, #certificateDetailBody #ListOfAnomalies tr, #certificateDetailBody #ListOfBarcodes tr
+{
+    height: 22px;
+}
+#certificateDetailBody #tabFilesDetail
+{
+    width: 100%;
+}
+#certificateDetailBody #tabFilesDetail tr
+{
+    height: 22px;
+}
+#certificateDetailBody #lblCertificateSearch, #certificateDetailBody #divAlert
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#certificateDetailBody #tabCertificateSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#certificateDetailBody #tabCertificateSearch tr
+{
+    height: 22px;
+}
+#certificateDetailBody #tabDocumentOperation
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+}
+#certificateDetailBody #tabDocumentOperation tr
+{
+    height: 22px;
+}
+#certificateDetailBody #tabCertificateDetailButton, #certificateDetailBody #tabCertificateDetailNew
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+}
+#certificateDetailBody #tabCertificateDetailButton tr, #certificateDetailBody #tabCertificateDetailNew tr
+{
+    height: 22px;
+}
+#certificateDetailBody #LstFstName
+{
+    text-transform: uppercase;
+}
+
+
+/*********************************************
+	TIPI DOCUMENTO -> PAGINA DI RICERCA TIPI DOCUMENTO
+*********************************************/
+#docTypeSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#docTypeSearchBody #tabDocTypeSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 40%;
+}
+#docTypeSearchBody #tabDocTypeSearch tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	TIPI DOCUMENTO -> PAGINA DI LISTA TIPI DOCUMENTO
+*********************************************/
+#docTypeListBody
+{
+    width: 100%;
+}
+#docTypeListBody #tabDocTypeList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+
+#docTypeListBody #tabDocTypeList tr
+{
+    height: 22px;
+}
+
+
+/**********************************************
+    TIPI DOCUMENTO -> PAGINA DI CREAZIONE E MODIFICA
+************************************************/
+#documentTypeDetailBody
+{
+    width: 100%;
+}
+#documentTypeDetailBody #tabDocumentTypeDetail
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#documentTypeDetailBody #tabDocumentTypeDetail tr
+{
+    height: 22px;
+}
+#documentTypeDetailBody #tabDocumentTypeDetailButton
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#documentTypeDetailBody #tabDocumentTypeDetailButton tr
+{
+    height: 22px;
+}
+#documentTypeDetailBody #CODTYPDOC
+{
+    text-transform: uppercase;
+}
+
+
+/*********************************************
+	TIPI DOCUMENTO -> PAGINA DI ASSOCIAZIONE ASSENZE
+*********************************************/
+#docTypeAssociationBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#docTypeAssociationBody #tabDocTypeAssociation
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 40%;
+}
+#docTypeAssociationBody #tabDocTypeAssociation tr
+{
+    height: 22px;
+}
+
+
+/**********************************************
+    ASSENZE -> INSERISCI
+************************************************/
+#tabAbsenceCreate
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#tabAbsenceCreateDetails
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 85%;
+}
+#tabAbsenceCreate #tabAbsenceCreateDetails tr
+{
+    height: 22px;
+}
+#tabAbsenceCreate #CODCRWMEM, #tabAbsenceCreate #LstFstName
+{
+    text-transform: uppercase;
+}
+
+
+/**********************************************
+    ABSENCETYPE -> RICERCA
+************************************************/
+#AbsenceTypeSearchBody
+{
+    width: 70%;
+    padding-bottom: 10px;
+}
+#AbsenceTypeSearchBody #tabAbsenceTypeSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 80%;
+}
+#AbsenceTypeSearchBody #tabAbsenceTypeSearch #AbsenceTypeParameters_SearchParameters_CODTSK
+{
+    width: 30px;
+    text-transform: uppercase;
+}
+#AbsenceTypeSearchBody #tabAbsenceTypeSearch #AbsenceTypeParameters_SearchParameters_DATVLYBEG, #AbsenceTypeParameters_SearchParameters_DATVLYEND
+{
+    width: 100px;
+}
+#AbsenceTypeSearchBody #tabAbsenceTypeSearch tr
+{
+    height: 22px;
+}
+
+/**********************************************
+    ABSENCETYPE -> LISTA
+************************************************/
+#AbsenceTypeList
+{
+    width: 200%;
+}
+#AbsenceTypeListBody #tabAbsenceTypeList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 90%;
+}
+#AbsenceTypeListBody #tabAbsenceTypeList tr
+{
+    height: 22px;
+}
+
+
+/**********************************************
+    EmpDetails
+**********************************************/
+#EmpDetails
+{
+    padding-bottom: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 80%;
+}
+
+
+/****************************************
+     ASSENZE -> RICERCA
+****************************************/
+#AbsencedivDiarySearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#AbsencedivDiarySearchBody #tabAbsenceDiarySearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 55%;
+}
+#AbsencedivDiarySearchBody #tabAbsenceDiarySearch tr
+{
+    height: 22px;
+}
+#AbsenceDiaryList
+{
+    width: 200%;
+}
+
+
+/********************************
+     ABSENCE ANOMALIES -> LISTA
+********************************/
+#AbsenceAnomaliesListBody
+{
+    width: 100%;
+}
+#AbsenceAnomaliesListBody #tabAbsenceAnomaliesList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#AbsenceAnomaliesListBody #tabAbsenceAnomaliesList tr
+{
+    height: 22px;
+}
+
+/********************************
+     ABSENCE ANOMALIES -> RICERCA
+*********************************/
+#AbsenceAnomaliesSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#AbsenceAnomaliesSearchBody #tabAbsenceAnomaliesSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 45%;
+}
+#AbsenceAnomaliesSearchBody #tabAbsenceAnomaliesSearch #CODCRWMEM
+{
+    width: 50px;
+}
+#AbsenceAnomaliesSearchBody #tabAbsenceAnomaliesSearch tr
+{
+    height: 22px;
+}
+
+
+/********************************
+     LISTA DOCUMENT ANOMALIES
+********************************/
+#DocumentAnomaliesListBody
+{
+    width: 100%;
+}
+#DocumentAnomaliesListBody #tabDocumentAnomaliesList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#DocumentAnomaliesListBody #tabDocumentAnomaliesList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+      DOCUMENT ANOMALIES
+*********************************************/
+#DocumentAnomaliesSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#DocumentAnomaliesSearchBody #tabDocumentAnomaliesSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#DocumentAnomaliesSearchBody #tabDocumentAnomaliesSearch tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	 PARAMETRI ASSENZE -> RICERCA
+*********************************************/
+#paramRegistrySearchBody
+{
+    width: 70%;
+}
+#paramRegistrySearchBody #tabParamRegistrySearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#paramRegistrySearchBody #tabParamRegistrySearch tr
+{
+    height: 22px;
+}
+#paramRegistrySearchBody #tabParamRegistrySearchButton
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#paramRegistrySearchBody #tabParamRegistrySearchButton tr
+{
+    height: 22px;
+}
+#paramRegistrySearchBody #CODPAR, #DESPAR
+{
+    text-transform: uppercase;
+}
+
+
+/*********************************************
+    PARAMETRI ASSENZE -> LISTA
+*********************************************/
+#paramRegistryListBody
+{
+    width: 100%;
+}
+#paramRegistryListBody #tabParamRegistryList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#paramRegistryListBody #tabParamRegistryList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	PARAMETRI ASSENZE -> CREAZIONE E MODIFICA
+*********************************************/
+#paramRegistryDetailBody
+{
+    width: 100%;
+}
+#paramRegistryDetailBody #tabParamRegistryDetail
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#paramRegistryDetailBody #tabParamRegistryDetail tr
+{
+    height: 22px;
+}
+#paramRegistryDetailBody #tabParamRegistryDetailButton
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#paramRegistryDetailBody #tabParamRegistryDetailButton tr
+{
+    height: 22px;
+}
+#paramRegistryDetailBody #CODPAR, #DESPAR
+{
+    text-transform: uppercase;
+}
+
+
+/*********************************************
+	 REGOLE CALCOLO -> RICERCA
+*********************************************/
+#paramRuleSearchBody
+{
+    width: 100%;
+}
+#paramRuleSearchBody #tabParamRuleSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#paramRuleSearchBody #tabParamRuleSearch tr
+{
+    height: 22px;
+}
+#paramRuleSearchBody #tabParamRuleSearchButton
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#paramRuleSearchBody #tabParamRuleSearchButton tr
+{
+    height: 22px;
+}
+#paramRuleSearchBody #CODPAR, #DESPAR
+{
+    text-transform: uppercase;
+}
+
+
+/*********************************************
+    REGOLE CALCOLO -> LISTA
+*********************************************/
+#paramRuleListBody
+{
+    width: 100%;
+}
+#paramRuleListBody #tabParamRuleList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 90%;
+}
+#paramRuleListBody #tabParamRuleList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	REGOLE CALCOLO -> DETTAGLIO
+*********************************************/
+#paramRuleDetailBody
+{
+    width: 100%;
+}
+#paramRuleDetailBody #tabParamRuleDetail
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#paramRuleDetailBody #tabParamRuleDetail tr
+{
+    height: 22px;
+}
+#paramRuleDetailBody #tabParamRuleDetailButton
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#paramRuleDetailBody #tabParamRuleDetailButton tr
+{
+    height: 22px;
+}
+#paramRuleDetailBody #CODRUL
+{
+    text-transform: uppercase;
+}
+#paramRuleDetailBody #DESRUL
+{
+    text-transform: uppercase;
+    width: 300px;
+}
+
+
+/*********************************************
+	REGOLE CALCOLO -> MODIFICA
+*********************************************/
+#paramRuleEditDetailBody
+{
+    width: 100%;
+}
+#paramRuleEditDetailBody #tabParamRuleDetail
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#paramRuleEditDetailBody #tabParamRuleDetail tr
+{
+    height: 22px;
+}
+#paramRuleEditDetailBody #tabParamRuleDetailButton
+{
+    margin-left: 15%;
+    margin-right: 25%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 30%;
+}
+#paramRuleEditDetailBody #tabParamRuleDetailButton tr
+{
+    height: 22px;
+}
+#paramRuleEditDetailBody #CODRUL
+{
+    text-transform: uppercase;
+}
+#paramRuleEditDetailBody #DESRUL
+{
+    width: 400px;
+}
+
+
+/****************************************************
+	 Associazione Parametro alla Regola -> RICERCA
+****************************************************/
+#paramRuleBindSearchBody
+{
+    width: 100%;
+}
+#paramRuleBindSearchBody #tabParamRuleBindSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 40%;
+}
+#paramRuleBindSearchBody #tabParamRuleBindSearch tr
+{
+    height: 22px;
+}
+#paramRuleBindSearchBody #tabParamRuleBindSearchButton
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 25%;
+}
+#paramRuleBindSearchBody #tabParamRuleBindSearchButton tr
+{
+    height: 22px;
+}
+#paramRuleBindSearchBody #COD, #paramRuleBindSearchBody #DES
+{
+    text-transform: uppercase;
+}
+
+/*********************************************
+    Associazione Parametro alla Regola -> LISTA
+*********************************************/
+#paramRuleBindListBody
+{
+    width: 100%;
+}
+#paramRuleBindListBody #tabParamRuleBindList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#paramRuleBindListBody #tabParamRuleBindList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	Associazione Parametro alla Regola -> CREAZIONE E MODIFICA
+*********************************************/
+#paramRuleBindDetailBody
+{
+    width: 100%;
+}
+#paramRuleBindDetailBody #tabParamRuleBindDetail
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#paramRuleBindDetailBody #tabParamRuleBindDetail tr
+{
+    height: 22px;
+}
+#paramRuleBindDetailBody #tabParamRuleBindDetailButton
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+#paramRuleBindDetailBody #tabParamRuleBindDetailButton tr
+{
+    height: 22px;
+}
+#paramRuleBindDetailBody #COD, #paramRuleBindDetailBody #DES
+{
+    text-transform: uppercase;
+}
+
+
+/*********************************************
+    PARAMETRI -> ASSOCIAZIONE PARAMETRO / TIPI ASSENZA
+*********************************************/
+#tabAssociateTSKList
+{
+    width: 100%;
+}
+#tabAssociableTSKList
+{
+    width: 100%;
+}
+#associateParamToAbsenceTypeBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#associateParamToAbsenceTypeBody #tabAssociateParamToAbsenceTypeDetail
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+}
+#associateParamToAbsenceTypeBody #tabAssociateParamToAbsenceTypeDetail tr
+{
+    height: 22px;
+}
+#associateParamToAbsenceTypeBody #tabAssociateParamToAbsenceTypeDetail .colField
+{
+    width: 100px;
+}
+#associateParamToAbsenceTypeBody #tabAssociateParamToAbsenceTypeLists
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 80%;
+}
+#associateParamToAbsenceTypeBody #tabAssociateParamToAbsenceTypeLists #tdAssociable
+{
+    width: 40%;
+    vertical-align: top;
+}
+#associateParamToAbsenceTypeBody #tabAssociateParamToAbsenceTypeLists #tdAssociable .associableRolesListBody
+{
+    width: 100%;
+}
+#associateParamToAbsenceTypeBody #tabAssociateParamToAbsenceTypeLists #tdAssociated
+{
+    width: 40%;
+    vertical-align: top;
+}
+#associateParamToAbsenceTypeBody #tabAssociateParamToAbsenceTypeLists #tdAssociated .associatedRolesListBody
+{
+    width: 100%;
+}
+#associateParamToAbsenceTypeBody #tabAssociateParamToAbsenceTypeLists th
+{
+    text-align: center;
+}
+#associateParamToAbsenceTypeBody #tabAssociateParamToAbsenceTypeLists tfoot
+{
+    text-align: center;
+}
+
+
+/*********************************************
+    PARAMETRI --> ASSOCIAZIONE PARAMETRO / TIPI ASSENZA --> GRIGLIA ASSOCIATI
+*********************************************/
+#associatedParamToAbsenceTypeListBody
+{
+    width: 45%;
+}
+#associatedParamToAbsenceTypeListBody #tabAssociatedParamToAbsenceTypeList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#associatedParamToAbsenceTypeListBody #tabAssociatedParamToAbsenceTypeList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+    PARAMETRI --> ASSOCIAZIONE PARAMETRO / TIPI ASSENZA --> GRIGLIA ASSOCAIBILI
+*********************************************/
+#associableParamToAbsenceTypeListBody
+{
+    width: 45%;
+}
+#associableParamToAbsenceTypeListBody #tabAssociableParamToAbsenceTypeList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+#associableParamToAbsenceTypeListBody #tabAssociableParamToAbsenceTypeList tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+    DIARY --> SEARCH
+*********************************************/
+#divDiarySearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#divDiarySearchBody #tabDiarySearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 55%;
+}
+#divDiarySearchBody #tabDiarySearch tr
+{
+    height: 22px;
+}
+#divDiarySearchBody #tabDiarySearch #GET_CREW_DIARYParameters_SearchParameters_CODCRWMEM, #divDiarySearchBody #tabDiarySearch #GET_CREW_DIARYParameters_SearchParameters_NAMLSTNAM, #divDiarySearchBody #tabDiarySearch #GET_CREW_DIARYParameters_SearchParameters_NAMFSTNAM
+{
+    text-transform: uppercase;
+}
+#divDiaryListBody
+{
+    font-size: 9px;
+    padding-bottom: 20px;
+}
+
+
+/*********************************************
+    ANOMALIE CERTIFICATI 
+*********************************************/
+#CertificateAnomaliesSearchBody
+{
+    width: 100%;
+}
+#tabCertificateAnomaliesSearch
+{
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 95%;
+}
+
+
+/**********************
+    ASSOCIA TSK A ROLE 
+**********************/
+#tabAssociateRolesToTsk
+{
+    width: 100%;
+}
+#AssociatedTskList
+{
+    width: 100%;
+}
+#AssociableTskList
+{
+    width: 100%;
+}
+#docTypeAssociatedTskListBody
+{
+    width: 100%;
+}
+#docTypeAssociableTskListBody
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+/**************************
+NetLineSap
+**************************/
+#SapRollList
+{
+    width: 100%;
+}
+#NetLineRollList
+{
+    width: 100%;
+}
+#tabNetLineSapRollList
+{
+    width: 100%;
+}
+
+
+/*********************************************
+	BATCH -> LANCIO
+*********************************************/
+#batchDetailBody
+{
+    width: 100%;
+}
+#batchDetailBody #tabBatch, #batchDetailBody #tabRule, #batchDetailBody #tabLastParam
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+}
+#batchDetailBody #tabBatch tr, #batchDetailBody #tabRule tr, #batchDetailBody #tabLastParam tr
+{
+    height: 22px;
+}
+#batchDetailBody #tabBatch td:first-child, #batchDetailBody #tabRule td:first-child, #batchDetailBody #tabLastParam td:first-child
+{
+    width: 160px;
+}
+#batchDetailBody #batchParamListBody
+{
+    margin-left: 5%;
+}
+#batchDetailBody #tabParamList
+{
+    width: 60%;
+}
+#batchDetailBody #tabParamList tr
+{
+    height: 22px;
+}
+#batchDetailBody #tabLaunchDetailButton, #batchDetailBody #tabLaunchDetailNew
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+}
+#batchDetailBody #tabLaunchDetailButton tr, #batchDetailBody #tabLaunchDetailNew tr
+{
+    height: 22px;
+}
+
+
+/*********************************************
+	RISULTATI DEL LANCIO BATCH -> RICERCA E LISTA
+*********************************************/
+#batchResultsSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#batchResultsSearchBody #tabBatchResultsSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 10px;
+    width: 50%;
+}
+#batchResultsSearchBody #tabBatchResultsSearch tr
+{
+    height: 22px;
+}
+#batchResultsSearchBody #divBatchResultsListBody #batchResultsListBody #tabBatchResultsList
+{
+    width: 100%;
+}
+#batchResultsSearchBody #tabBatchResultsButtons 
+{
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+/*******************************************************
+	RISULTATI DEL BATCH ORE VOLO -> RICERCA E LISTA
+*******************************************************/
+#resultReportFlightHoursSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#resultReportFlightHoursSearchBody #tabResultReportFlightHoursSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 50%;
+    padding-bottom: 20px;
+}
+#resultReportFlightHoursSearchBody #tabResultReportFlightHoursSearch tr
+{
+    height: 22px;
+}
+#resultReportFlightHoursSearchBody #batchResultReportFlightHoursListBody #reportFlightHoursListBody #tabResultFlightHoursList
+{
+    width: 100%;
+}
+#resultReportFlightHoursSearchBody #batchResultReportFlightHoursListBody #tabResultReportFlightHoursButtons 
+{
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+/*************************************************************
+	RISULTATI DEL BATCH MALATTIA BAMBINO -> RICERCA E LISTA
+*************************************************************/
+#resultReportChildSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#resultReportChildSearchBody #tabResultReportChildSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 50%;
+    padding-bottom: 20px;
+}
+#resultReportChildSearchBody #tabResultReportChildSearch tr
+{
+    height: 22px;
+}
+#resultReportChildSearchBody #batchResultReportChildListBody #reportChildListBody #tabResultChildList
+{
+    width: 90%;
+}
+#resultReportChildSearchBody #batchResultReportChildListBody #tabResultReportChildButtons 
+{
+    width: 90%;
+    padding-top: 20px;
+}
+
+
+/*******************************************************
+	RISULTATI DEL BATCH COMPORTO -> RICERCA E LISTA
+*******************************************************/
+#resultReportCogGapSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#resultReportCogGapSearchBody #tabResultReportCogGapSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 10px;
+    width: 50%;
+}
+#resultReportCogGapSearchBody #tabResultReportCogGapSearch tr
+{
+    height: 22px;
+}
+#resultReportCogGapSearchBody #batchResultReportCogGapListBody #reportCogGapListBody #tabResultCogGapList
+{
+    width: 100%;
+}
+#resultReportCogGapSearchBody #batchResultReportCogGapListBody #reportCogGapListBody #tabResultCogGapList thead,
+#resultReportCogGapSearchBody #batchResultReportCogGapListBody #reportCogGapListBody #tabResultCogGapList tbody
+{
+    font-size: 11px;
+    font-family: Arial Narrow;
+}
+#resultReportCogGapSearchBody #batchResultReportCogGapListBody #reportCogGapListBody #tabResultCogGapList tfoot tr td
+{
+    padding-right: 70px;
+}
+#resultReportCogGapSearchBody #batchResultReportCogGapListBody #tabResultReportCogGapButtons 
+{
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+/**************************************************************
+	RISULTATI DEL BATCH COMPORTO DETTAGLIO -> RICERCA E LISTA
+***************************************************************/
+#resultReportCogDetGapSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#resultReportCogDetGapSearchBody #tabResultReportCogDetGapSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 50%;
+    padding-bottom: 20px;
+}
+#resultReportCogDetGapSearchBody #tabResultReportCogDetGapSearch tr
+{
+    height: 22px;
+}
+#resultReportCogDetGapSearchBody #batchResultReportCogDetGapListBody #reportCogDetGapListBody #tabResultCogDetGapList
+{
+    width: 40%;
+}
+#resultReportCogDetGapSearchBody #tabResultReportCogDetGapButtons 
+{
+    width: 40%;
+    padding-top: 20px;
+}
+#resultReportCogDetGapSearchBody #tabCogDetGapDetail, #resultReportCogDetGapSearchBody #tabCogDetGapFooter
+{
+    margin-left: 0%;
+    margin-right: 00%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+}
+
+
+/**************************************************************
+	RISULTATI DEL BATCH COMPORTO CRUSCOTTO -> RICERCA E LISTA
+***************************************************************/
+#resultReportDasSlrRdcSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#resultReportDasSlrRdcSearchBody #tabResultReportDasSlrRdcSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 50%;
+    padding-bottom: 20px;
+}
+#resultReportDasSlrRdcSearchBody #tabResultReportDasSlrRdcSearch tr
+{
+    height: 22px;
+}
+#resultReportDasSlrRdcSearchBody #batchResultReportDasSlrRdcListBody #reportDasSlrRdcListBody #tabResultDasSlrRdcList
+{
+    width: 100%;
+    font-size: 10px;
+    font-family: Arial Narrow;
+}
+#resultReportDasSlrRdcSearchBody #tabResultReportDasSlrRdcButtons 
+{
+    width: 100%;
+    padding-top: 20px;
+}
+#resultReportDasSlrRdcSearchBody #tabDasSlrRdcDetail, #resultReportDasSlrRdcSearchBody #tabDasSlrRdcFooter
+{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+}
+
+
+/*******************************************************
+	RISULTATI DEL BATCH IMMOBILIZZO -> RICERCA E LISTA
+*******************************************************/
+#resultReportImoGapSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#resultReportImoGapSearchBody #tabResultReportImoGapSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 50%;
+    padding-bottom: 20px;
+}
+#resultReportImoGapSearchBody #tabResultReportImoGapSearch tr
+{
+    height: 22px;
+}
+#resultReportImoGapSearchBody #batchResultReportImoGapListBody #reportImoGapListBody #tabResultImoGapList
+{
+    width: 98%;
+}
+#resultReportImoGapSearchBody #batchResultReportImoGapListBody #tabResultReportImoGapButtons 
+{
+    width: 98%;
+    padding-top: 20px;
+}
+
+
+/*******************************************************
+	RISULTATI DEL BATCH FILE SAP -> RICERCA E LISTA
+*******************************************************/
+#resultReportSapSlrRdcSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#resultReportSapSlrRdcSearchBody #tabResultReportSapSlrRdcSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 10px;
+    width: 50%;
+}
+#resultReportSapSlrRdcSearchBody #tabResultReportSapSlrRdcSearch tr
+{
+    height: 22px;
+}
+#resultReportSapSlrRdcSearchBody #batchResultReportSapSlrRdcListBody #reportSapSlrRdcListBody #tabResultSapSlrRdcList
+{
+    width: 70%;
+}
+#resultReportSapSlrRdcSearchBody #batchResultReportSapSlrRdcListBody #tabResultReportSapSlrRdcButtons 
+{
+    width: 70%;
+    padding-top: 20px;
+}
+
+
+/********************************************************************
+	Anomalie Assenza - Consuntive ed Operative -> PAGINA DI RICERCA 
+*********************************************************************/
+#anomaliesOperatingConsuntiveSearchBody
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+#anomaliesOperatingConsuntiveSearchBody #tabAnomaliesOperatingConsuntiveSearch
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 50%;
+}
+#anomaliesOperatingConsuntiveSearchBody #tabAnomaliesOperatingConsuntiveSearch tr
+{
+    height: 22px;
+}
+
+
+/***************************************************************
+	Anomalie Assenza - Consuntive ed Operative -> LISTA 
+****************************************************************/
+#anomaliesOperatingConsuntiveListBody
+{
+    width: 100%;
+}
+#anomaliesOperatingConsuntiveListBody #tabAnomaliesOperatingConsuntiveList
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+}
+
+#anomaliesOperatingConsuntiveListBody #tabAnomaliesOperatingConsuntiveList tr
+{
+    height: 22px;
+}
+

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Domain" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Domain" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:21709/WcfService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="TUSR">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CODSTSUSR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODUSR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODUSRMOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DATLSTLOG" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DESEMLUSR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESENYUSR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESFSTNAMUSR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESLSTNAMUSR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESTELUSR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FLGDEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FLGMODTYP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TMSLSTMOD" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TUSRROL" nillable="true" type="tns:ArrayOfTUSRROL" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="TUSR" nillable="true" type="tns:TUSR" />
+  <xs:complexType name="ArrayOfTUSRROL">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TUSRROL" nillable="true" type="tns:TUSRROL" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTUSRROL" nillable="true" type="tns:ArrayOfTUSRROL" />
+  <xs:complexType name="TUSRROL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CODGRPARE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODROL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODUSR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODUSRMOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DATASC" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FLGMODTYP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TGRPARE" nillable="true" type="tns:TGRPARE" />
+      <xs:element minOccurs="0" name="TMSLSTMOD" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TROL" nillable="true" type="tns:TROL" />
+      <xs:element minOccurs="0" name="TUSR" nillable="true" type="tns:TUSR" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="TUSRROL" nillable="true" type="tns:TUSRROL" />
+  <xs:complexType name="TGRPARE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CODGRPARE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODUSRMOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESGRPARE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FLGMODTYP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TMSLSTMOD" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TUSRROL" nillable="true" type="tns:ArrayOfTUSRROL" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="TGRPARE" nillable="true" type="tns:TGRPARE" />
+  <xs:complexType name="TROL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CODROL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODUSRMOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESROL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FLGMODTYP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TMSLSTMOD" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TROLFNC" nillable="true" type="tns:ArrayOfTROLFNC" />
+      <xs:element minOccurs="0" name="TUSRROL" nillable="true" type="tns:ArrayOfTUSRROL" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="TROL" nillable="true" type="tns:TROL" />
+  <xs:complexType name="ArrayOfTROLFNC">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TROLFNC" nillable="true" type="tns:TROLFNC" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTROLFNC" nillable="true" type="tns:ArrayOfTROLFNC" />
+  <xs:complexType name="TROLFNC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CODFNC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODROL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODUSRMOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DATASC" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FLGMODTYP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TFNC" nillable="true" type="tns:TFNC" />
+      <xs:element minOccurs="0" name="TMSLSTMOD" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TROL" nillable="true" type="tns:TROL" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="TROLFNC" nillable="true" type="tns:TROLFNC" />
+  <xs:complexType name="TFNC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CODFNC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODFNCFAT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODODR" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="CODUSRMOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESACTCTL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCTL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESFNC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FLGMODTYP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TMSLSTMOD" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TROLFNC" nillable="true" type="tns:ArrayOfTROLFNC" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="TFNC" nillable="true" type="tns:TFNC" />
+  <xs:complexType name="ArrayOfTUSR">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TUSR" nillable="true" type="tns:TUSR" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTUSR" nillable="true" type="tns:ArrayOfTUSR" />
+  <xs:complexType name="ArrayOfTROL">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TROL" nillable="true" type="tns:TROL" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTROL" nillable="true" type="tns:ArrayOfTROL" />
+  <xs:complexType name="ArrayOfTFNC">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TFNC" nillable="true" type="tns:TFNC" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTFNC" nillable="true" type="tns:ArrayOfTFNC" />
+  <xs:complexType name="ArrayOfVMEN">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VMEN" nillable="true" type="tns:VMEN" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVMEN" nillable="true" type="tns:ArrayOfVMEN" />
+  <xs:complexType name="VMEN">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CODFNC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODFNCFAT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CODLVL" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CODODR" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="CODUSR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESACTCTL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCTL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESFNC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SORPAT" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="VMEN" nillable="true" type="tns:VMEN" />
+  <xs:complexType name="TSYSPAR">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CODSYSPAR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESPARDES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESPARVAL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NUMSYSPARIDX" type="xs:short" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="TSYSPAR" nillable="true" type="tns:TSYSPAR" />
+</xs:schema>

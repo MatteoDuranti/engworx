@@ -1,0 +1,30 @@
+﻿13/11/2012 Release 1.0.4
+*   Estesa la textboxfor con un parametro che definisce il case del testo ( toUpper,toLower)    ************************
+************************************************************************************************************************
+*    Per utilizzarla aggiungere alla masterpage o alla pagina il seguente codice javascript:
+*		<script type="text/javascript">
+*			$(document).ready(function () {
+*				$(":input[case=upper]").each(function () {
+*					$(this).keyup(function () {
+*						this.value = this.value.toUpperCase();
+*					});
+*				});
+*				$(":input[case=lower]").each(function () {
+*					$(this).keyup(function () {
+*						this.value = this.value.toLowerCase();
+*					});
+*				});
+*			});
+*		</script>
+*	La parte che riguarda il keyup eventualmente può essere modificata nel kavascript ( se non si vuole fare l'upper 
+*	case di tutto il valore ma eventualemte del singolo carattere (per esempio sul  keydown )
+************************************************************************************************************************
+16/10/2012 Release 1.0.3
+*	Possibilità di aggiungere il nome griglia  ( gridsrc sul link testata e sul footer )
+17/09/2012 Release 1.0.2
+*	Eliminato il grassetto dal totale griglia
+31/08/2012 Release 1.0.1
+*	Eliminato div header della griglia 
+*	Aggiunto caption alla gridTable contenente i pulsanti ed il totale
+*	Eliminato "<center><b>Nessun risultato trovato</b></center>"
+*	Aggiunta riga con descrizione "Nessun risultato trovato" in caso di dati nulli direttamente nella tabella

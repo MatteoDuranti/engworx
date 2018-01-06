@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WcfService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:21709/WcfService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:21709/WcfService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:21709/WcfService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Domain" />
+      <xsd:import schemaLocation="http://localhost:21709/WcfService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Service" />
+      <xsd:import schemaLocation="http://localhost:21709/WcfService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Service.DataContracts" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MessageInputOf_TUSR">
+    <wsdl:part name="parameters" element="tns:MessageInputOf_TUSR" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_TUSR_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadIn" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_TUSR">
+    <wsdl:part name="parameters" element="tns:MessageOutputOf_TUSR" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_TUSR_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadOut" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_GetFilteredOf_TUSR">
+    <wsdl:part name="parameters" element="tns:MessageInputOf_GetFilteredOf_TUSR" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_GetFilteredOf_TUSR_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadIn" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_IListOf_TUSR">
+    <wsdl:part name="parameters" element="tns:MessageOutputOf_IListOf_TUSR" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_IListOf_TUSR_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadOut" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_GetFilteredOf_TROL">
+    <wsdl:part name="parameters" element="tns:MessageInputOf_GetFilteredOf_TROL" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_GetFilteredOf_TROL_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadIn" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_IListOf_TROL">
+    <wsdl:part name="parameters" element="tns:MessageOutputOf_IListOf_TROL" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_IListOf_TROL_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadOut" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_TROL">
+    <wsdl:part name="parameters" element="tns:MessageInputOf_TROL" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_TROL_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadIn" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_TROL">
+    <wsdl:part name="parameters" element="tns:MessageOutputOf_TROL" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_TROL_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadOut" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_ListOf_TROL">
+    <wsdl:part name="parameters" element="tns:MessageOutputOf_ListOf_TROL" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_ListOf_TROL_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadOut" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_TFNC">
+    <wsdl:part name="parameters" element="tns:MessageInputOf_TFNC" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_TFNC_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadIn" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_ListOf_TFNC">
+    <wsdl:part name="parameters" element="tns:MessageOutputOf_ListOf_TFNC" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_ListOf_TFNC_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadOut" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_TROLFNC">
+    <wsdl:part name="parameters" element="tns:MessageInputOf_TROLFNC" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_TROLFNC_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadIn" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_TROLFNC">
+    <wsdl:part name="parameters" element="tns:MessageOutputOf_TROLFNC" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_TROLFNC_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadOut" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_ListOf_TUSRROL">
+    <wsdl:part name="parameters" element="tns:MessageInputOf_ListOf_TUSRROL" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_ListOf_TUSRROL_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadIn" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_TUSRROL">
+    <wsdl:part name="parameters" element="tns:MessageOutputOf_TUSRROL" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_TUSRROL_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadOut" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_ListOf_VMEN">
+    <wsdl:part name="parameters" element="tns:MessageOutputOf_ListOf_VMEN" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_ListOf_VMEN_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadOut" />
+  </wsdl:message>
+  <wsdl:message name="IWcfService_CheckDbConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDbConnection" />
+  </wsdl:message>
+  <wsdl:message name="IWcfService_CheckDbConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDbConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_TSYSPAR">
+    <wsdl:part name="parameters" element="tns:MessageInputOf_TSYSPAR" />
+  </wsdl:message>
+  <wsdl:message name="MessageInputOf_TSYSPAR_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadIn" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_TSYSPAR">
+    <wsdl:part name="parameters" element="tns:MessageOutputOf_TSYSPAR" />
+  </wsdl:message>
+  <wsdl:message name="MessageOutputOf_TSYSPAR_Headers">
+    <wsdl:part name="MessageHeader" element="tns:HeadOut" />
+  </wsdl:message>
+  <wsdl:portType name="IWcfService">
+    <wsdl:operation name="GetUserRolesByCompanyAndUsername">
+      <wsdl:documentation>
+        <summary>Ritorna l'User con la lista dei ruoli</summary>
+      </wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetUserRolesByCompanyAndUsername" name="MessageInputOf_TUSR" message="tns:MessageInputOf_TUSR" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetUserRolesByCompanyAndUsernameResponse" name="MessageOutputOf_TUSR" message="tns:MessageOutputOf_TUSR" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredUsers">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetFilteredUsers" name="MessageInputOf_GetFilteredOf_TUSR" message="tns:MessageInputOf_GetFilteredOf_TUSR" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetFilteredUsersResponse" name="MessageOutputOf_IListOf_TUSR" message="tns:MessageOutputOf_IListOf_TUSR" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByPrimaryKey">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetUserByPrimaryKey" name="MessageInputOf_TUSR" message="tns:MessageInputOf_TUSR" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetUserByPrimaryKeyResponse" name="MessageOutputOf_TUSR" message="tns:MessageOutputOf_TUSR" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUser">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/InsertUser" name="MessageInputOf_TUSR" message="tns:MessageInputOf_TUSR" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/InsertUserResponse" name="MessageOutputOf_TUSR" message="tns:MessageOutputOf_TUSR" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:documentation>
+        <summary>Cancella l'utente e la lista dei ruoli associati all'utente</summary>
+      </wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/DeleteUser" name="MessageInputOf_TUSR" message="tns:MessageInputOf_TUSR" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/DeleteUserResponse" name="MessageOutputOf_TUSR" message="tns:MessageOutputOf_TUSR" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:documentation>
+        <summary>Aggiorna l'utente </summary>
+      </wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/UpdateUser" name="MessageInputOf_TUSR" message="tns:MessageInputOf_TUSR" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/UpdateUserResponse" name="MessageOutputOf_TUSR" message="tns:MessageOutputOf_TUSR" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredRoles">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetFilteredRoles" name="MessageInputOf_GetFilteredOf_TROL" message="tns:MessageInputOf_GetFilteredOf_TROL" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetFilteredRolesResponse" name="MessageOutputOf_IListOf_TROL" message="tns:MessageOutputOf_IListOf_TROL" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleByPrimaryKey">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetRoleByPrimaryKey" name="MessageInputOf_TROL" message="tns:MessageInputOf_TROL" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetRoleByPrimaryKeyResponse" name="MessageOutputOf_TROL" message="tns:MessageOutputOf_TROL" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRoles">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetAllRoles" name="MessageInputOf_TROL" message="tns:MessageInputOf_TROL" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetAllRolesResponse" name="MessageOutputOf_IListOf_TROL" message="tns:MessageOutputOf_IListOf_TROL" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRolesAndAllowedFunctions">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetRolesAndAllowedFunctions" name="MessageInputOf_TUSR" message="tns:MessageInputOf_TUSR" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetRolesAndAllowedFunctionsResponse" name="MessageOutputOf_ListOf_TROL" message="tns:MessageOutputOf_ListOf_TROL" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRolesAssociableToUser">
+      <wsdl:documentation>
+        <summary>Ritorna tutta lista dei ruoli che possono essere associati ad un utente</summary>
+      </wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetRolesAssociableToUser" name="MessageInputOf_TUSR" message="tns:MessageInputOf_TUSR" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetRolesAssociableToUserResponse" name="MessageOutputOf_IListOf_TROL" message="tns:MessageOutputOf_IListOf_TROL" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRolesAssociatedToUser">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetRolesAssociatedToUser" name="MessageInputOf_TUSR" message="tns:MessageInputOf_TUSR" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetRolesAssociatedToUserResponse" name="MessageOutputOf_ListOf_TROL" message="tns:MessageOutputOf_ListOf_TROL" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRole">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/UpdateRole" name="MessageInputOf_TROL" message="tns:MessageInputOf_TROL" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/UpdateRoleResponse" name="MessageOutputOf_TROL" message="tns:MessageOutputOf_TROL" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRole">
+      <wsdl:documentation>
+        <summary>Crea nuovo ruolo </summary>
+      </wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/InsertRole" name="MessageInputOf_TROL" message="tns:MessageInputOf_TROL" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/InsertRoleResponse" name="MessageOutputOf_TROL" message="tns:MessageOutputOf_TROL" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/DeleteRole" name="MessageInputOf_TROL" message="tns:MessageInputOf_TROL" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/DeleteRoleResponse" name="MessageOutputOf_TROL" message="tns:MessageOutputOf_TROL" />
+    </wsdl:operation>
+    <wsdl:operation name="getRolesByControllerAction">
+      <wsdl:documentation>
+        <summary>Aggiorna il ruolo </summary>
+      </wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/getRolesByControllerAction" name="MessageInputOf_TFNC" message="tns:MessageInputOf_TFNC" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/getRolesByControllerActionResponse" name="MessageOutputOf_ListOf_TROL" message="tns:MessageOutputOf_ListOf_TROL" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuncionsWithPermissions">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetFuncionsWithPermissions" name="MessageInputOf_TROL" message="tns:MessageInputOf_TROL" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetFuncionsWithPermissionsResponse" name="MessageOutputOf_ListOf_TFNC" message="tns:MessageOutputOf_ListOf_TFNC" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDeleteAssociationFunctToRole">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/InsertDeleteAssociationFunctToRole" name="MessageInputOf_TROLFNC" message="tns:MessageInputOf_TROLFNC" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/InsertDeleteAssociationFunctToRoleResponse" name="MessageOutputOf_TROLFNC" message="tns:MessageOutputOf_TROLFNC" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserRole">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/InsertUserRole" name="MessageInputOf_ListOf_TUSRROL" message="tns:MessageInputOf_ListOf_TUSRROL" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/InsertUserRoleResponse" name="MessageOutputOf_TUSRROL" message="tns:MessageOutputOf_TUSRROL" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserRole">
+      <wsdl:documentation>
+        <summary>Rimuove l'associazione di un ruolo ad un utente</summary>
+      </wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/DeleteUserRole" name="MessageInputOf_ListOf_TUSRROL" message="tns:MessageInputOf_ListOf_TUSRROL" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/DeleteUserRoleResponse" name="MessageOutputOf_TUSRROL" message="tns:MessageOutputOf_TUSRROL" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuByUser">
+      <wsdl:documentation>
+        <summary>Ritorna il menu in base all'utente</summary>
+      </wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetMenuByUser" name="MessageInputOf_TUSR" message="tns:MessageInputOf_TUSR" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetMenuByUserResponse" name="MessageOutputOf_ListOf_VMEN" message="tns:MessageOutputOf_ListOf_VMEN" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDbConnection">
+      <wsdl:documentation>
+        <summary>CheckDbConnection</summary>
+      </wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/CheckDbConnection" message="tns:IWcfService_CheckDbConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/CheckDbConnectionResponse" message="tns:IWcfService_CheckDbConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSysParByPrimaryKey">
+      <wsdl:documentation>CyclicReferencesAwareAttribute</wsdl:documentation>
+      <wsdl:input wsaw:Action="http://tempuri.org/IWcfService/GetSysParByPrimaryKey" name="MessageInputOf_TSYSPAR" message="tns:MessageInputOf_TSYSPAR" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWcfService/GetSysParByPrimaryKeyResponse" name="MessageOutputOf_TSYSPAR" message="tns:MessageOutputOf_TSYSPAR" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWcfService" type="tns:IWcfService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserRolesByCompanyAndUsername">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetUserRolesByCompanyAndUsername" style="document" />
+      <wsdl:input name="MessageInputOf_TUSR">
+        <soap:header message="tns:MessageInputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TUSR">
+        <soap:header message="tns:MessageOutputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredUsers">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetFilteredUsers" style="document" />
+      <wsdl:input name="MessageInputOf_GetFilteredOf_TUSR">
+        <soap:header message="tns:MessageInputOf_GetFilteredOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_IListOf_TUSR">
+        <soap:header message="tns:MessageOutputOf_IListOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetUserByPrimaryKey" style="document" />
+      <wsdl:input name="MessageInputOf_TUSR">
+        <soap:header message="tns:MessageInputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TUSR">
+        <soap:header message="tns:MessageOutputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUser">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/InsertUser" style="document" />
+      <wsdl:input name="MessageInputOf_TUSR">
+        <soap:header message="tns:MessageInputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TUSR">
+        <soap:header message="tns:MessageOutputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/DeleteUser" style="document" />
+      <wsdl:input name="MessageInputOf_TUSR">
+        <soap:header message="tns:MessageInputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TUSR">
+        <soap:header message="tns:MessageOutputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/UpdateUser" style="document" />
+      <wsdl:input name="MessageInputOf_TUSR">
+        <soap:header message="tns:MessageInputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TUSR">
+        <soap:header message="tns:MessageOutputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredRoles">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetFilteredRoles" style="document" />
+      <wsdl:input name="MessageInputOf_GetFilteredOf_TROL">
+        <soap:header message="tns:MessageInputOf_GetFilteredOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_IListOf_TROL">
+        <soap:header message="tns:MessageOutputOf_IListOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetRoleByPrimaryKey" style="document" />
+      <wsdl:input name="MessageInputOf_TROL">
+        <soap:header message="tns:MessageInputOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TROL">
+        <soap:header message="tns:MessageOutputOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRoles">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetAllRoles" style="document" />
+      <wsdl:input name="MessageInputOf_TROL">
+        <soap:header message="tns:MessageInputOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_IListOf_TROL">
+        <soap:header message="tns:MessageOutputOf_IListOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRolesAndAllowedFunctions">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetRolesAndAllowedFunctions" style="document" />
+      <wsdl:input name="MessageInputOf_TUSR">
+        <soap:header message="tns:MessageInputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_ListOf_TROL">
+        <soap:header message="tns:MessageOutputOf_ListOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRolesAssociableToUser">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetRolesAssociableToUser" style="document" />
+      <wsdl:input name="MessageInputOf_TUSR">
+        <soap:header message="tns:MessageInputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_IListOf_TROL">
+        <soap:header message="tns:MessageOutputOf_IListOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRolesAssociatedToUser">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetRolesAssociatedToUser" style="document" />
+      <wsdl:input name="MessageInputOf_TUSR">
+        <soap:header message="tns:MessageInputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_ListOf_TROL">
+        <soap:header message="tns:MessageOutputOf_ListOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRole">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/UpdateRole" style="document" />
+      <wsdl:input name="MessageInputOf_TROL">
+        <soap:header message="tns:MessageInputOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TROL">
+        <soap:header message="tns:MessageOutputOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRole">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/InsertRole" style="document" />
+      <wsdl:input name="MessageInputOf_TROL">
+        <soap:header message="tns:MessageInputOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TROL">
+        <soap:header message="tns:MessageOutputOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/DeleteRole" style="document" />
+      <wsdl:input name="MessageInputOf_TROL">
+        <soap:header message="tns:MessageInputOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TROL">
+        <soap:header message="tns:MessageOutputOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRolesByControllerAction">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/getRolesByControllerAction" style="document" />
+      <wsdl:input name="MessageInputOf_TFNC">
+        <soap:header message="tns:MessageInputOf_TFNC_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_ListOf_TROL">
+        <soap:header message="tns:MessageOutputOf_ListOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuncionsWithPermissions">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetFuncionsWithPermissions" style="document" />
+      <wsdl:input name="MessageInputOf_TROL">
+        <soap:header message="tns:MessageInputOf_TROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_ListOf_TFNC">
+        <soap:header message="tns:MessageOutputOf_ListOf_TFNC_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDeleteAssociationFunctToRole">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/InsertDeleteAssociationFunctToRole" style="document" />
+      <wsdl:input name="MessageInputOf_TROLFNC">
+        <soap:header message="tns:MessageInputOf_TROLFNC_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TROLFNC">
+        <soap:header message="tns:MessageOutputOf_TROLFNC_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserRole">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/InsertUserRole" style="document" />
+      <wsdl:input name="MessageInputOf_ListOf_TUSRROL">
+        <soap:header message="tns:MessageInputOf_ListOf_TUSRROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TUSRROL">
+        <soap:header message="tns:MessageOutputOf_TUSRROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserRole">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/DeleteUserRole" style="document" />
+      <wsdl:input name="MessageInputOf_ListOf_TUSRROL">
+        <soap:header message="tns:MessageInputOf_ListOf_TUSRROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TUSRROL">
+        <soap:header message="tns:MessageOutputOf_TUSRROL_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuByUser">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetMenuByUser" style="document" />
+      <wsdl:input name="MessageInputOf_TUSR">
+        <soap:header message="tns:MessageInputOf_TUSR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_ListOf_VMEN">
+        <soap:header message="tns:MessageOutputOf_ListOf_VMEN_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDbConnection">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/CheckDbConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSysParByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/IWcfService/GetSysParByPrimaryKey" style="document" />
+      <wsdl:input name="MessageInputOf_TSYSPAR">
+        <soap:header message="tns:MessageInputOf_TSYSPAR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MessageOutputOf_TSYSPAR">
+        <soap:header message="tns:MessageOutputOf_TSYSPAR_Headers" part="MessageHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WcfService">
+    <wsdl:port name="BasicHttpBinding_IWcfService" binding="tns:BasicHttpBinding_IWcfService">
+      <soap:address location="http://localhost:21709/WcfService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

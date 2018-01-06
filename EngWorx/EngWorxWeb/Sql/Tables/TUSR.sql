@@ -1,0 +1,51 @@
+﻿CREATE TABLE TUSR
+(
+  CODCMPGRP     VARCHAR2(2 BYTE)                NOT NULL,
+  CODUSR        VARCHAR2(6 BYTE)                NOT NULL,
+  DESFSTNAMUSR  VARCHAR2(30 BYTE),
+  DESLSTNAMUSR  VARCHAR2(30 BYTE),
+  DESEMLUSR     VARCHAR2(50 BYTE),
+  DESTELUSR     VARCHAR2(30 BYTE),
+  DESENYUSR     VARCHAR2(6 BYTE),
+  CODSTSUSR     CHAR(1 BYTE),
+  DATLSTLOG     TIMESTAMP(6),
+  FLGDEL        CHAR(1 BYTE),
+  CODUSRMOD     VARCHAR2(8 BYTE),
+  FLGMODTYP     CHAR(1 BYTE),
+  TMSLSTMOD     TIMESTAMP(6)
+)
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;
+
+COMMENT ON COLUMN TUSR.CODCMPGRP IS 'Codice Azienda dell''utente';
+
+COMMENT ON COLUMN TUSR.CODUSR IS 'Codcie Matricola dell''utente';
+
+COMMENT ON COLUMN TUSR.DESFSTNAMUSR IS 'Nome dell''utente';
+
+COMMENT ON COLUMN TUSR.DESLSTNAMUSR IS 'Cognome dell''utente';
+
+COMMENT ON COLUMN TUSR.DESEMLUSR IS 'Email dell''utente';
+
+COMMENT ON COLUMN TUSR.DESTELUSR IS 'Telefono dell''utente';
+
+COMMENT ON COLUMN TUSR.DESENYUSR IS 'Ente di appartenenza dell''utente';
+
+COMMENT ON COLUMN TUSR.CODSTSUSR IS 'Stato dell''utenza:
+A=attiva
+B=bloccata';
+
+COMMENT ON COLUMN TUSR.DATLSTLOG IS 'Data di ultimo accesso al sistema';
+
+COMMENT ON COLUMN TUSR.FLGDEL IS 'Flag Cancellato (per l''eliminazione logica della riga dalla tabella)';
+
+COMMENT ON COLUMN TUSR.CODUSRMOD IS 'Codice utente modificatore';
+
+COMMENT ON COLUMN TUSR.FLGMODTYP IS 'Tipo di modifica';
+
+COMMENT ON COLUMN TUSR.TMSLSTMOD IS 'Data di modifica';
+
+

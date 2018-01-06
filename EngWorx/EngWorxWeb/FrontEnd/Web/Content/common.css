@@ -1,0 +1,567 @@
+﻿/***************************************************************
+    CSS RESET
+***************************************************************/
+html, body, form, table, tbody, tr, td, h3, img
+{
+    margin: 0px;
+    padding: 0px;
+    border-spacing: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: solid;
+}
+
+/***************************************************************
+    STILI COMUNI
+***************************************************************/
+body
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    color: #006633;
+    background-color: #DFDFDF;
+}
+input, select, textarea
+{
+    font-size: 11px;
+}
+a
+{
+    color: #006633;
+    text-decoration: underline;
+}
+a.selected
+{
+    color: black;
+}
+a:hover
+{
+    color: #006633;
+    text-decoration: none;
+}
+.tabTitle
+{
+    font-size: 12px;
+    font-weight: bold;
+    height: 50px;
+}
+.tabHeader
+{
+    font-weight: bold;
+}
+.redText
+{
+    color: Red;
+}
+.greenText
+{
+    color: Green;
+}
+.boldText
+{
+    font-weight: bold;
+}
+.superBoldText
+{
+    font-size: large;
+    font-weight: bold;
+}
+.inputYear
+{
+    width: 40px;
+}
+.inputEmail
+{
+    width: 150px;
+}
+.inputDate
+{
+    width: 100px;
+}
+.input50
+{
+    width: 50px;
+}
+.input80
+{
+    width: 80px;
+}
+.input100
+{
+    width: 100px;
+}
+.highlightRow
+{
+    background-color: #007333;
+    color: white;
+    font-weight: bold;
+}
+.highlightDiv
+{
+    height: 20px;
+    background-color: #007333;
+    color: white;
+    font-weight: bold;
+    font-size: 10pt;
+    vertical-align: middle;
+}
+.right
+{
+    text-align:right;
+}
+.upper
+{
+    text-transform: uppercase;
+}
+.nowrap
+{
+    white-space: nowrap;
+}
+
+
+/***************************************************************
+    STRUTTURA LAYOUT
+***************************************************************/
+body#root
+{
+    text-align: center; /* centra tutto il portale in IE 5.x */
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    float: left;
+}
+div#page
+{
+    width: 96%;
+    /* min-width: 910px; */
+    /* min-width: 1156px; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 2% !important; /* box model hack per IE7, Mozilla */
+    margin-left: 1%; /* box model hack per IE6 (mantenere questo ordinamento) */
+    margin-right: 2% !important; /* box model hack per IE7, Mozilla */
+    margin-right: 1%; /* box model hack per IE6 (mantenere questo ordinamento) */
+    text-align: left; /* ripristina l'allineamento */
+    float: left;
+    clear: both;
+}
+div#page div#header
+{
+    float: left;
+    clear: both;
+    width: 100%;
+    background-color: #FDFDFD;
+}
+div#page div#header div.logo
+{
+    width: 30%;
+    height: 67px;
+    float: left;
+}
+div#page div#header div.logo a
+{
+    background-image: url(../Images/logo_app.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    display: block;
+    height: 67px;
+    width: 207px;
+}
+div#page div#header div.version
+{
+    width: 50%;
+    height: 67px;
+    float: left;
+    color: #007333;
+}
+div#page div#header div.version #appName
+{
+    float: left;
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+div#page div#header div.version #appName #appVersion
+{
+    font-style: italic;
+    font-size: 10px;
+    font-weight: normal;
+}
+div#page div#header div.logout
+{
+    width: 10%;
+    float: right;
+    clear: right;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align:right;
+}
+div#page div#main
+{
+    float: left;
+    clear: both;
+    min-height: 300px;
+    width: 100%;
+    background-color: #FDFDFD;
+}
+div#page div#main #divmenu
+{
+    height: 30px;
+    width: 76%;
+    float: left;
+    text-align: center;
+}
+div#page div#main #divmenu ul
+{
+    display: inline-block;
+}
+div#page div#main #divmenu ul li
+{
+    margin: 0px 5px 0px 5px;
+    width: 150px;
+}
+div#page div#main #divmenu ul li a
+{
+    text-decoration: none;
+}
+div#page div#main #divmenu ul li a:hover
+{
+    text-decoration: underline;
+}
+div#page div#main div.welcome
+{
+    width: 23%;
+    clear: right;
+    font-size: 11px;
+    padding-right: 1%;
+    text-align: right;
+    float: right;
+    height: 30px;
+}
+div#page div#main #divcontent
+{
+    border-top: 1px solid #CCCCCC;
+    min-height: 350px;
+    width: 96.5%;
+    float: left;
+    padding-left: 1.5%;
+    padding-right: 2%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+div#page div#footer
+{
+    border-top: 1px solid #CCCCCC;
+    float: left;
+    clear: both;
+    width: 100%;
+    background-color: #FDFDFD;
+}
+div#page div#footer .footer-right
+{
+    text-align: center;
+    width: 100%;
+    float: left;
+    height: 55px;
+    padding-top: 20px;
+}
+
+
+/***************************************************************
+    BORDI ARROTONDATI ALLA STRUTTURA ESTERNA
+***************************************************************/
+div#page b.rtop, div#page b.rbottom
+{
+    display: block;
+    background: #DFDFDF;
+}
+div#page b.rtop b, div#page b.rbottom b
+{
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    background: #FDFDFD;
+}
+div#page b.r1
+{
+    margin: 0 5px;
+}
+div#page b.r2
+{
+    margin: 0 3px;
+}
+div#page b.r3
+{
+    margin: 0 2px;
+}
+div#page b.rtop b.r4, div#page b.rbottom b.r4
+{
+    margin: 0 1px;
+    height: 2px;
+}
+
+
+/***************************************************************
+	MENU
+***************************************************************/
+/* Inseriti standard ???? servono ???? */
+header, footer, nav, section
+{
+    display: block;
+}
+/* Styles for basic forms */
+fieldset
+{
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+legend
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+textarea
+{
+    min-height: 75px;
+}
+
+
+/***************************************************************
+    Styles for validation helpers
+***************************************************************/
+.field-validation-error
+{
+    color: #ff0000;
+    visibility: visible;
+}
+.field-validation-valid
+{
+    /*display: none;*/
+    visibility: hidden;
+    /*width: 10px;*/
+}
+.input-validation-error
+{
+    border: 2px solid #ff0000;
+    background-color: #ffeeee;
+}
+.validation-summary-errors
+{
+    color: #ff0000;
+}
+.validation-summary-valid
+{
+    display: none;
+}
+
+
+/***************************************************************
+    STILE PER GENERIC WEB GRID
+***************************************************************/
+table.genericwebgrid
+{
+    border-collapse: collapse;
+}
+table.genericwebgrid thead tr th
+{
+    background-color: #669966;
+    color: White;
+    font-weight: bold;
+    border: 1px #ccc solid;
+    padding:0px 5px 0px 5px;
+    height: 25px;
+}
+table.genericwebgrid thead tr th a
+{
+    background-color: #669966;
+    color: White;
+    font-weight: bold;
+    border: 0px;
+    height: 25px;
+    text-decoration: none;
+}
+table.genericwebgrid tfoot tr td
+{
+    text-align: right;
+}
+table.genericwebgrid tbody
+{
+    height: auto;
+}
+table.genericwebgrid tbody tr td
+{
+    border: 1px #ccc solid;
+    height: 20px;
+    padding: 0px 5px 0px 5px;
+}
+table.genericwebgrid tbody tr.r0 td
+{
+    background-color: #CCFFCC;
+}
+table.genericwebgrid tbody tr.r1 td
+{
+    background-color: #FFFFCC;
+}
+table.genericwebgrid td.center
+{
+    text-align: center;
+}
+table.genericwebgrid td.left
+{
+    text-align: left;
+}
+table.genericwebgrid td.right
+{
+    text-align: right;
+}
+table.genericwebgrid td.sep
+{
+    border-right: 1px solid #669966
+}
+table.genericwebgrid td.icon
+{
+    text-align: center;
+    width: 18px;
+}
+table.genericwebgrid td.w40
+{
+    width: 40px;
+}
+table.genericwebgrid td.w45
+{
+    width: 45px;
+}
+table.genericwebgrid td.w65
+{
+    width: 65px;
+}
+table.genericwebgrid td.w70
+{
+    width: 70px;
+}
+table.genericwebgrid td.w75
+{
+    width: 75px;
+}
+table.genericwebgrid td.w85
+{
+    width: 85px;
+}
+table.genericwebgrid td.w95
+{
+    width: 95px;
+}
+table.genericwebgrid td.w100
+{
+    width: 100px;
+}
+table.genericwebgrid td.w110
+{
+    width: 110px;
+}
+table.genericwebgrid td.w130
+{
+    width: 130px;
+}
+table.genericwebgrid td.w150
+{
+    width: 150px;
+}
+table.genericwebgrid td.w140
+{
+    width: 140px;
+}
+table.genericwebgrid td.w160
+{
+    width: 160px;
+}
+table.genericwebgrid td.w180
+{
+    width: 180px;
+}
+table.genericwebgrid td.w200
+{
+    width: 200px;
+}
+table.genericwebgrid td.w220
+{
+    width: 220px;
+}
+table.genericwebgrid td.w250
+{
+    width: 250px;
+}
+
+/***************************************************************
+    STILE PER DATEPICKER JQUERY
+***************************************************************/
+.ui-datepicker-trigger {
+    margin-left : 5px;
+    vertical-align : top;
+}
+
+/*********************************************
+	VISUALIZZA / NASCONDI
+*********************************************/
+.fieldHidden
+{
+    display:none;
+}
+.fieldVisible
+{
+    display: block;
+}
+
+
+/****************************************************
+	SITEMASTER --> DIV LOADING ( WAITING FOR .... )
+*****************************************************/
+#divLoading{
+position: fixed;
+top: 0;
+left: 0;
+z-index: 5000;
+width: 100%;
+height: 100%;
+background-color: #AAAAAA;
+font-size: 150%;
+color: white;
+padding: 2px;
+display:none;
+text-align: center;
+vertical-align: middle;
+}
+.imagelistHeaderSX
+{
+    float: left;
+}
+.divHeaderCount
+{
+    float: right;
+    text-align: right;
+}
+.curHelp
+{
+    cursor: help;
+}
+
+/****************************************************
+	AUTOCOMPLETE 
+*****************************************************/
+.ui-autocomplete-loading { background: white url('../Images/ui-anim_basic_16x16.gif') right center no-repeat; }
+
+/* Textbox Width */
+.iw180{width: 180px;}
+.iw200{width: 200px;}
+.iw220{width: 220px;}
+.iw250{width: 250px;}

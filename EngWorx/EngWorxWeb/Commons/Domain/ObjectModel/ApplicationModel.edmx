@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TFNC">
+          <Key>
+            <PropertyRef Name="CODFNC" />
+          </Key>
+          <Property Name="CODFNC" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="CODFNCFAT" Type="nvarchar" MaxLength="5" />
+          <Property Name="DESFNC" Type="nvarchar" MaxLength="50" />
+          <Property Name="DESACTCTL" Type="nvarchar" MaxLength="50" />
+          <Property Name="DESCTL" Type="nvarchar" MaxLength="50" />
+          <Property Name="CODODR" Type="smallint" />
+          <Property Name="CODUSRMOD" Type="nvarchar" MaxLength="8" />
+          <Property Name="FLGMODTYP" Type="nchar" MaxLength="1" />
+          <Property Name="TMSLSTMOD" Type="datetime" />
+        </EntityType>
+        <EntityType Name="TGRPARE">
+          <Key>
+            <PropertyRef Name="CODGRPARE" />
+          </Key>
+          <Property Name="CODGRPARE" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="DESGRPARE" Type="nvarchar" MaxLength="100" />
+          <Property Name="CODUSRMOD" Type="nvarchar" MaxLength="8" />
+          <Property Name="FLGMODTYP" Type="nchar" MaxLength="1" />
+          <Property Name="TMSLSTMOD" Type="datetime" />
+        </EntityType>
+        <EntityType Name="TROL">
+          <Key>
+            <PropertyRef Name="CODROL" />
+          </Key>
+          <Property Name="CODROL" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="DESROL" Type="nvarchar" MaxLength="50" />
+          <Property Name="CODUSRMOD" Type="nvarchar" MaxLength="8" />
+          <Property Name="FLGMODTYP" Type="nchar" MaxLength="1" />
+          <Property Name="TMSLSTMOD" Type="datetime" />
+        </EntityType>
+        <EntityType Name="TROLFNC">
+          <Key>
+            <PropertyRef Name="CODROL" />
+            <PropertyRef Name="CODFNC" />
+          </Key>
+          <Property Name="CODROL" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="CODFNC" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="DATASC" Type="datetime" />
+          <Property Name="CODUSRMOD" Type="nvarchar" MaxLength="8" />
+          <Property Name="FLGMODTYP" Type="nchar" MaxLength="1" />
+          <Property Name="TMSLSTMOD" Type="datetime" />
+        </EntityType>
+        <EntityType Name="TSYSPAR">
+          <Key>
+            <PropertyRef Name="CODSYSPAR" />
+            <PropertyRef Name="NUMSYSPARIDX" />
+          </Key>
+          <Property Name="CODSYSPAR" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="NUMSYSPARIDX" Type="smallint" Nullable="false" />
+          <Property Name="DESPARVAL" Type="nvarchar" MaxLength="50" />
+          <Property Name="DESPARDES" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="TUSR">
+          <Key>
+            <PropertyRef Name="CODUSR" />
+          </Key>
+          <Property Name="CODUSR" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="DESFSTNAMUSR" Type="nvarchar" MaxLength="30" />
+          <Property Name="DESLSTNAMUSR" Type="nvarchar" MaxLength="30" />
+          <Property Name="DESEMLUSR" Type="nvarchar" MaxLength="50" />
+          <Property Name="DESTELUSR" Type="nvarchar" MaxLength="30" />
+          <Property Name="DESENYUSR" Type="nvarchar" MaxLength="6" />
+          <Property Name="CODSTSUSR" Type="nchar" MaxLength="1" />
+          <Property Name="DATLSTLOG" Type="datetime" />
+          <Property Name="FLGDEL" Type="nchar" MaxLength="1" />
+          <Property Name="CODUSRMOD" Type="nvarchar" MaxLength="8" />
+          <Property Name="FLGMODTYP" Type="nchar" MaxLength="1" />
+          <Property Name="TMSLSTMOD" Type="datetime" />
+        </EntityType>
+        <EntityType Name="TUSRROL">
+          <Key>
+            <PropertyRef Name="CODUSR" />
+            <PropertyRef Name="CODROL" />
+            <PropertyRef Name="CODGRPARE" />
+          </Key>
+          <Property Name="CODUSR" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="CODROL" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="CODGRPARE" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="DATASC" Type="datetime" />
+          <Property Name="CODUSRMOD" Type="nvarchar" MaxLength="8" />
+          <Property Name="FLGMODTYP" Type="nchar" MaxLength="1" />
+          <Property Name="TMSLSTMOD" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ENGWORXDB.dbo.VMEN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="VMEN">
+          <Key>
+            <PropertyRef Name="CODUSR" />
+            <PropertyRef Name="CODFNC" />
+          </Key>
+          <Property Name="CODUSR" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="CODFNC" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="CODFNCFAT" Type="nvarchar" MaxLength="5" />
+          <Property Name="DESFNC" Type="nvarchar" MaxLength="50" />
+          <Property Name="DESCTL" Type="nvarchar" MaxLength="50" />
+          <Property Name="DESACTCTL" Type="nvarchar" MaxLength="50" />
+          <Property Name="CODLVL" Type="int" />
+          <Property Name="CODODR" Type="smallint" />
+          <Property Name="SORPAT" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK_TROLFNC_TFNC">
+          <End Role="TFNC" Type="Self.TFNC" Multiplicity="1" />
+          <End Role="TROLFNC" Type="Self.TROLFNC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TFNC">
+              <PropertyRef Name="CODFNC" />
+            </Principal>
+            <Dependent Role="TROLFNC">
+              <PropertyRef Name="CODFNC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TROLFNC_TROL">
+          <End Role="TROL" Type="Self.TROL" Multiplicity="1" />
+          <End Role="TROLFNC" Type="Self.TROLFNC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TROL">
+              <PropertyRef Name="CODROL" />
+            </Principal>
+            <Dependent Role="TROLFNC">
+              <PropertyRef Name="CODROL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TUSRROL_TGRPARE">
+          <End Role="TGRPARE" Type="Self.TGRPARE" Multiplicity="1" />
+          <End Role="TUSRROL" Type="Self.TUSRROL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TGRPARE">
+              <PropertyRef Name="CODGRPARE" />
+            </Principal>
+            <Dependent Role="TUSRROL">
+              <PropertyRef Name="CODGRPARE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TUSRROL_TROL">
+          <End Role="TROL" Type="Self.TROL" Multiplicity="1" />
+          <End Role="TUSRROL" Type="Self.TUSRROL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TROL">
+              <PropertyRef Name="CODROL" />
+            </Principal>
+            <Dependent Role="TUSRROL">
+              <PropertyRef Name="CODROL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TUSRROL_TUSR">
+          <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+          <End Role="TUSRROL" Type="Self.TUSRROL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TUSR">
+              <PropertyRef Name="CODUSR" />
+            </Principal>
+            <Dependent Role="TUSRROL">
+              <PropertyRef Name="CODUSR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="dbModelStoreContainer">
+          <EntitySet Name="TFNC" EntityType="Self.TFNC" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TGRPARE" EntityType="Self.TGRPARE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TROL" EntityType="Self.TROL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TROLFNC" EntityType="Self.TROLFNC" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TSYSPAR" EntityType="Self.TSYSPAR" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TUSR" EntityType="Self.TUSR" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TUSRROL" EntityType="Self.TUSRROL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VMEN" EntityType="Self.VMEN" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [VMEN].[CODUSR] AS [CODUSR], 
+    [VMEN].[CODFNC] AS [CODFNC], 
+    [VMEN].[CODFNCFAT] AS [CODFNCFAT], 
+    [VMEN].[DESFNC] AS [DESFNC], 
+    [VMEN].[DESCTL] AS [DESCTL], 
+    [VMEN].[DESACTCTL] AS [DESACTCTL], 
+    [VMEN].[CODLVL] AS [CODLVL], 
+    [VMEN].[CODODR] AS [CODODR], 
+    [VMEN].[SORPAT] AS [SORPAT]
+    FROM [dbo].[VMEN] AS [VMEN]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_TROLFNC_TFNC" Association="Self.FK_TROLFNC_TFNC">
+            <End Role="TFNC" EntitySet="TFNC" />
+            <End Role="TROLFNC" EntitySet="TROLFNC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TROLFNC_TROL" Association="Self.FK_TROLFNC_TROL">
+            <End Role="TROL" EntitySet="TROL" />
+            <End Role="TROLFNC" EntitySet="TROLFNC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TUSRROL_TGRPARE" Association="Self.FK_TUSRROL_TGRPARE">
+            <End Role="TGRPARE" EntitySet="TGRPARE" />
+            <End Role="TUSRROL" EntitySet="TUSRROL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TUSRROL_TROL" Association="Self.FK_TUSRROL_TROL">
+            <End Role="TROL" EntitySet="TROL" />
+            <End Role="TUSRROL" EntitySet="TUSRROL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TUSRROL_TUSR" Association="Self.FK_TUSRROL_TUSR">
+            <End Role="TUSR" EntitySet="TUSR" />
+            <End Role="TUSRROL" EntitySet="TUSRROL" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TFNC">
+          <Key>
+            <PropertyRef Name="CODFNC" />
+          </Key>
+          <Property Name="CODFNC" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CODFNCFAT" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="DESFNC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DESACTCTL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DESCTL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CODODR" Type="Int16" />
+          <Property Name="CODUSRMOD" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FLGMODTYP" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="TMSLSTMOD" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="TROLFNC" Relationship="Self.FK_TROLFNC_TFNC" FromRole="TFNC" ToRole="TROLFNC" />
+        </EntityType>
+        <EntityType Name="TGRPARE">
+          <Key>
+            <PropertyRef Name="CODGRPARE" />
+          </Key>
+          <Property Name="CODGRPARE" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DESGRPARE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CODUSRMOD" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FLGMODTYP" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="TMSLSTMOD" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="TUSRROL" Relationship="dbModel.FK_TUSRROL_TGRPARE" FromRole="TGRPARE" ToRole="TUSRROL" />
+        </EntityType>
+        <EntityType Name="TROL">
+          <Key>
+            <PropertyRef Name="CODROL" />
+          </Key>
+          <Property Name="CODROL" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DESROL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CODUSRMOD" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FLGMODTYP" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="TMSLSTMOD" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="TROLFNC" Relationship="Self.FK_TROLFNC_TROL" FromRole="TROL" ToRole="TROLFNC" />
+          <NavigationProperty Name="TUSRROL" Relationship="dbModel.FK_TUSRROL_TROL" FromRole="TROL" ToRole="TUSRROL" />
+        </EntityType>
+        <EntityType Name="TROLFNC">
+          <Key>
+            <PropertyRef Name="CODROL" />
+            <PropertyRef Name="CODFNC" />
+          </Key>
+          <Property Name="CODROL" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CODFNC" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DATASC" Type="DateTime" Precision="3" />
+          <Property Name="CODUSRMOD" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FLGMODTYP" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="TMSLSTMOD" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="TFNC" Relationship="Self.FK_TROLFNC_TFNC" FromRole="TROLFNC" ToRole="TFNC" />
+          <NavigationProperty Name="TROL" Relationship="Self.FK_TROLFNC_TROL" FromRole="TROLFNC" ToRole="TROL" />
+        </EntityType>
+        <Association Name="FK_TROLFNC_TFNC">
+          <End Role="TFNC" Type="Self.TFNC" Multiplicity="1" />
+          <End Role="TROLFNC" Type="Self.TROLFNC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TFNC">
+              <PropertyRef Name="CODFNC" />
+            </Principal>
+            <Dependent Role="TROLFNC">
+              <PropertyRef Name="CODFNC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TROLFNC_TROL">
+          <End Role="TROL" Type="Self.TROL" Multiplicity="1" />
+          <End Role="TROLFNC" Type="Self.TROLFNC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TROL">
+              <PropertyRef Name="CODROL" />
+            </Principal>
+            <Dependent Role="TROLFNC">
+              <PropertyRef Name="CODROL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="dbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TFNC" EntityType="Self.TFNC" />
+          <EntitySet Name="TGRPARE" EntityType="Self.TGRPARE" />
+          <EntitySet Name="TROL" EntityType="Self.TROL" />
+          <EntitySet Name="TROLFNC" EntityType="Self.TROLFNC" />
+          <AssociationSet Name="FK_TROLFNC_TFNC" Association="Self.FK_TROLFNC_TFNC">
+            <End Role="TFNC" EntitySet="TFNC" />
+            <End Role="TROLFNC" EntitySet="TROLFNC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TROLFNC_TROL" Association="Self.FK_TROLFNC_TROL">
+            <End Role="TROL" EntitySet="TROL" />
+            <End Role="TROLFNC" EntitySet="TROLFNC" />
+          </AssociationSet>
+          <EntitySet Name="TSYSPAR" EntityType="dbModel.TSYSPAR" />
+          <EntitySet Name="TUSR" EntityType="dbModel.TUSR" />
+          <EntitySet Name="TUSRROL" EntityType="dbModel.TUSRROL" />
+          <AssociationSet Name="FK_TUSRROL_TGRPARE" Association="dbModel.FK_TUSRROL_TGRPARE">
+            <End Role="TGRPARE" EntitySet="TGRPARE" />
+            <End Role="TUSRROL" EntitySet="TUSRROL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TUSRROL_TROL" Association="dbModel.FK_TUSRROL_TROL">
+            <End Role="TROL" EntitySet="TROL" />
+            <End Role="TUSRROL" EntitySet="TUSRROL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TUSRROL_TUSR" Association="dbModel.FK_TUSRROL_TUSR">
+            <End Role="TUSR" EntitySet="TUSR" />
+            <End Role="TUSRROL" EntitySet="TUSRROL" />
+          </AssociationSet>
+          <EntitySet Name="VMEN" EntityType="dbModel.VMEN" />
+        </EntityContainer>
+        <EntityType Name="TSYSPAR">
+          <Key>
+            <PropertyRef Name="CODSYSPAR" />
+            <PropertyRef Name="NUMSYSPARIDX" />
+          </Key>
+          <Property Name="CODSYSPAR" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="NUMSYSPARIDX" Type="Int16" Nullable="false" />
+          <Property Name="DESPARVAL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DESPARDES" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TUSR">
+          <Key>
+            <PropertyRef Name="CODUSR" />
+          </Key>
+          <Property Name="CODUSR" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="DESFSTNAMUSR" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DESLSTNAMUSR" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DESEMLUSR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DESTELUSR" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DESENYUSR" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="CODSTSUSR" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="DATLSTLOG" Type="DateTime" Precision="3" />
+          <Property Name="FLGDEL" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="CODUSRMOD" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FLGMODTYP" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="TMSLSTMOD" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="TUSRROL" Relationship="dbModel.FK_TUSRROL_TUSR" FromRole="TUSR" ToRole="TUSRROL" />
+        </EntityType>
+        <EntityType Name="TUSRROL">
+          <Key>
+            <PropertyRef Name="CODUSR" />
+            <PropertyRef Name="CODROL" />
+            <PropertyRef Name="CODGRPARE" />
+          </Key>
+          <Property Name="CODUSR" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="CODROL" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="CODGRPARE" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="DATASC" Type="DateTime" Precision="3" />
+          <Property Name="CODUSRMOD" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FLGMODTYP" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="TMSLSTMOD" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="TGRPARE" Relationship="dbModel.FK_TUSRROL_TGRPARE" FromRole="TUSRROL" ToRole="TGRPARE" />
+          <NavigationProperty Name="TROL" Relationship="dbModel.FK_TUSRROL_TROL" FromRole="TUSRROL" ToRole="TROL" />
+          <NavigationProperty Name="TUSR" Relationship="dbModel.FK_TUSRROL_TUSR" FromRole="TUSRROL" ToRole="TUSR" />
+        </EntityType>
+        <Association Name="FK_TUSRROL_TGRPARE">
+          <End Type="dbModel.TGRPARE" Role="TGRPARE" Multiplicity="1" />
+          <End Type="dbModel.TUSRROL" Role="TUSRROL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TGRPARE">
+              <PropertyRef Name="CODGRPARE" />
+            </Principal>
+            <Dependent Role="TUSRROL">
+              <PropertyRef Name="CODGRPARE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TUSRROL_TROL">
+          <End Type="dbModel.TROL" Role="TROL" Multiplicity="1" />
+          <End Type="dbModel.TUSRROL" Role="TUSRROL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TROL">
+              <PropertyRef Name="CODROL" />
+            </Principal>
+            <Dependent Role="TUSRROL">
+              <PropertyRef Name="CODROL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TUSRROL_TUSR">
+          <End Type="dbModel.TUSR" Role="TUSR" Multiplicity="1" />
+          <End Type="dbModel.TUSRROL" Role="TUSRROL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TUSR">
+              <PropertyRef Name="CODUSR" />
+            </Principal>
+            <Dependent Role="TUSRROL">
+              <PropertyRef Name="CODUSR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="VMEN">
+          <Key>
+            <PropertyRef Name="CODUSR" />
+            <PropertyRef Name="CODFNC" />
+          </Key>
+          <Property Name="CODUSR" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="CODFNC" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="CODFNCFAT" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="DESFNC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DESCTL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DESACTCTL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CODLVL" Type="Int32" />
+          <Property Name="CODODR" Type="Int16" />
+          <Property Name="SORPAT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbModelStoreContainer" CdmEntityContainer="dbEntities">
+          <EntitySetMapping Name="TFNC">
+            <EntityTypeMapping TypeName="dbModel.TFNC">
+              <MappingFragment StoreEntitySet="TFNC">
+                <ScalarProperty Name="CODFNC" ColumnName="CODFNC" />
+                <ScalarProperty Name="CODFNCFAT" ColumnName="CODFNCFAT" />
+                <ScalarProperty Name="DESFNC" ColumnName="DESFNC" />
+                <ScalarProperty Name="DESACTCTL" ColumnName="DESACTCTL" />
+                <ScalarProperty Name="DESCTL" ColumnName="DESCTL" />
+                <ScalarProperty Name="CODODR" ColumnName="CODODR" />
+                <ScalarProperty Name="CODUSRMOD" ColumnName="CODUSRMOD" />
+                <ScalarProperty Name="FLGMODTYP" ColumnName="FLGMODTYP" />
+                <ScalarProperty Name="TMSLSTMOD" ColumnName="TMSLSTMOD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TGRPARE">
+            <EntityTypeMapping TypeName="dbModel.TGRPARE">
+              <MappingFragment StoreEntitySet="TGRPARE">
+                <ScalarProperty Name="CODGRPARE" ColumnName="CODGRPARE" />
+                <ScalarProperty Name="DESGRPARE" ColumnName="DESGRPARE" />
+                <ScalarProperty Name="CODUSRMOD" ColumnName="CODUSRMOD" />
+                <ScalarProperty Name="FLGMODTYP" ColumnName="FLGMODTYP" />
+                <ScalarProperty Name="TMSLSTMOD" ColumnName="TMSLSTMOD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TROL">
+            <EntityTypeMapping TypeName="dbModel.TROL">
+              <MappingFragment StoreEntitySet="TROL">
+                <ScalarProperty Name="CODROL" ColumnName="CODROL" />
+                <ScalarProperty Name="DESROL" ColumnName="DESROL" />
+                <ScalarProperty Name="CODUSRMOD" ColumnName="CODUSRMOD" />
+                <ScalarProperty Name="FLGMODTYP" ColumnName="FLGMODTYP" />
+                <ScalarProperty Name="TMSLSTMOD" ColumnName="TMSLSTMOD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TROLFNC">
+            <EntityTypeMapping TypeName="dbModel.TROLFNC">
+              <MappingFragment StoreEntitySet="TROLFNC">
+                <ScalarProperty Name="CODROL" ColumnName="CODROL" />
+                <ScalarProperty Name="CODFNC" ColumnName="CODFNC" />
+                <ScalarProperty Name="DATASC" ColumnName="DATASC" />
+                <ScalarProperty Name="CODUSRMOD" ColumnName="CODUSRMOD" />
+                <ScalarProperty Name="FLGMODTYP" ColumnName="FLGMODTYP" />
+                <ScalarProperty Name="TMSLSTMOD" ColumnName="TMSLSTMOD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TSYSPAR">
+            <EntityTypeMapping TypeName="dbModel.TSYSPAR">
+              <MappingFragment StoreEntitySet="TSYSPAR">
+                <ScalarProperty Name="DESPARDES" ColumnName="DESPARDES" />
+                <ScalarProperty Name="DESPARVAL" ColumnName="DESPARVAL" />
+                <ScalarProperty Name="NUMSYSPARIDX" ColumnName="NUMSYSPARIDX" />
+                <ScalarProperty Name="CODSYSPAR" ColumnName="CODSYSPAR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TUSR">
+            <EntityTypeMapping TypeName="dbModel.TUSR">
+              <MappingFragment StoreEntitySet="TUSR">
+                <ScalarProperty Name="TMSLSTMOD" ColumnName="TMSLSTMOD" />
+                <ScalarProperty Name="FLGMODTYP" ColumnName="FLGMODTYP" />
+                <ScalarProperty Name="CODUSRMOD" ColumnName="CODUSRMOD" />
+                <ScalarProperty Name="FLGDEL" ColumnName="FLGDEL" />
+                <ScalarProperty Name="DATLSTLOG" ColumnName="DATLSTLOG" />
+                <ScalarProperty Name="CODSTSUSR" ColumnName="CODSTSUSR" />
+                <ScalarProperty Name="DESENYUSR" ColumnName="DESENYUSR" />
+                <ScalarProperty Name="DESTELUSR" ColumnName="DESTELUSR" />
+                <ScalarProperty Name="DESEMLUSR" ColumnName="DESEMLUSR" />
+                <ScalarProperty Name="DESLSTNAMUSR" ColumnName="DESLSTNAMUSR" />
+                <ScalarProperty Name="DESFSTNAMUSR" ColumnName="DESFSTNAMUSR" />
+                <ScalarProperty Name="CODUSR" ColumnName="CODUSR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TUSRROL">
+            <EntityTypeMapping TypeName="dbModel.TUSRROL">
+              <MappingFragment StoreEntitySet="TUSRROL">
+                <ScalarProperty Name="TMSLSTMOD" ColumnName="TMSLSTMOD" />
+                <ScalarProperty Name="FLGMODTYP" ColumnName="FLGMODTYP" />
+                <ScalarProperty Name="CODUSRMOD" ColumnName="CODUSRMOD" />
+                <ScalarProperty Name="DATASC" ColumnName="DATASC" />
+                <ScalarProperty Name="CODGRPARE" ColumnName="CODGRPARE" />
+                <ScalarProperty Name="CODROL" ColumnName="CODROL" />
+                <ScalarProperty Name="CODUSR" ColumnName="CODUSR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VMEN">
+            <EntityTypeMapping TypeName="dbModel.VMEN">
+              <MappingFragment StoreEntitySet="VMEN">
+                <ScalarProperty Name="SORPAT" ColumnName="SORPAT" />
+                <ScalarProperty Name="CODODR" ColumnName="CODODR" />
+                <ScalarProperty Name="CODLVL" ColumnName="CODLVL" />
+                <ScalarProperty Name="DESACTCTL" ColumnName="DESACTCTL" />
+                <ScalarProperty Name="DESCTL" ColumnName="DESCTL" />
+                <ScalarProperty Name="DESFNC" ColumnName="DESFNC" />
+                <ScalarProperty Name="CODFNCFAT" ColumnName="CODFNCFAT" />
+                <ScalarProperty Name="CODFNC" ColumnName="CODFNC" />
+                <ScalarProperty Name="CODUSR" ColumnName="CODUSR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

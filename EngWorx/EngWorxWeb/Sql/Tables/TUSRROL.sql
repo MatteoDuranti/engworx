@@ -1,0 +1,34 @@
+﻿CREATE TABLE TUSRROL
+(
+  CODCMPGRP  VARCHAR2(2 BYTE)                   NOT NULL,
+  CODUSR     VARCHAR2(6 BYTE)                   NOT NULL,
+  CODROL     VARCHAR2(3 BYTE)                   NOT NULL,
+  CODGRPARE  VARCHAR2(3 BYTE)                   NOT NULL,
+  DATASC     TIMESTAMP(6),
+  CODUSRMOD  VARCHAR2(8 BYTE),
+  FLGMODTYP  CHAR(1 BYTE),
+  TMSLSTMOD  TIMESTAMP(6)
+)
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;
+
+COMMENT ON COLUMN TUSRROL.CODCMPGRP IS 'Codice Azienda dell''utente';
+
+COMMENT ON COLUMN TUSRROL.CODUSR IS 'Codcie Matricola dell''utente';
+
+COMMENT ON COLUMN TUSRROL.CODROL IS 'Codice univoco del ruolo';
+
+COMMENT ON COLUMN TUSRROL.CODGRPARE IS 'Codice univoco dell''area di raggruppamento';
+
+COMMENT ON COLUMN TUSRROL.DATASC IS 'Data di associazione tra ruolo, utente e area';
+
+COMMENT ON COLUMN TUSRROL.CODUSRMOD IS 'Codice utente modificatore';
+
+COMMENT ON COLUMN TUSRROL.FLGMODTYP IS 'Tipo di modifica';
+
+COMMENT ON COLUMN TUSRROL.TMSLSTMOD IS 'Data di modifica';
+
+

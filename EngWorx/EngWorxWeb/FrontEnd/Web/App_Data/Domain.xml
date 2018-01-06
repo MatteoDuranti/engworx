@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DomainList>
+  <Domain>
+    <Code>NAZ</Code>
+  </Domain>
+  <Domain>
+    <Code>INT</Code>
+  </Domain>
+  <Domain>
+    <Code>USER</Code>
+  </Domain>
+</DomainList>

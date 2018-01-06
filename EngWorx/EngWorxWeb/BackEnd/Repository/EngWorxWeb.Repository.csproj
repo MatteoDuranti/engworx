@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24ABF79A-404E-4CAD-B8E4-5C98FE555B80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Repository</RootNamespace>
+    <AssemblyName>EngWorxWeb.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\MenuRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\RoleFunctionsRepository.cs" />
+    <Compile Include="Common\RoleRepository.cs" />
+    <Compile Include="Common\SysParRepository.cs" />
+    <Compile Include="Common\UserRepository.cs" />
+    <Compile Include="Common\UserRolesRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\FunctionRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EngWorxCore\EngWorxCore.RepositoryInterface\EngWorxCore.RepositoryInterface.csproj">
+      <Project>{0a9e66f2-321f-48f9-85e6-0e12559b0098}</Project>
+      <Name>EngWorxCore.RepositoryInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EngWorxCore\EngWorxCore.Repository\EngWorxCore.Repository.csproj">
+      <Project>{a8ab192d-253f-47e1-aa20-7058dd7a698d}</Project>
+      <Name>EngWorxCore.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Commons\Domain\EngWorxWeb.Domain.vbproj">
+      <Project>{bbc4a9d0-3358-4cfb-b0cf-2d7371d4273d}</Project>
+      <Name>EngWorxWeb.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RepositoryInterface\EngWorxWeb.RepositoryInterface.csproj">
+      <Project>{06b2f0a0-9ba9-484f-a251-f381119210e6}</Project>
+      <Name>EngWorxWeb.RepositoryInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,37 @@
+﻿CREATE TABLE TFNC
+(
+  CODFNC     VARCHAR2(5 BYTE)                   NOT NULL,
+  CODFNCFAT  VARCHAR2(5 BYTE),
+  DESFNC     VARCHAR2(50 BYTE),
+  DESACTCTL  VARCHAR2(50 BYTE),
+  DESCTL     VARCHAR2(50 BYTE),
+  CODODR     NUMBER(2),
+  CODUSRMOD  VARCHAR2(8 BYTE),
+  FLGMODTYP  CHAR(1 BYTE),
+  TMSLSTMOD  TIMESTAMP(6)
+)
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;
+
+COMMENT ON COLUMN TFNC.CODFNC IS 'Codice univoco della funzione';
+
+COMMENT ON COLUMN TFNC.CODFNCFAT IS 'Codice della funzione padre';
+
+COMMENT ON COLUMN TFNC.DESFNC IS 'Descrizione della funzione';
+
+COMMENT ON COLUMN TFNC.DESACTCTL IS 'Descrizione Azione (utilizzata in MVC)';
+
+COMMENT ON COLUMN TFNC.DESCTL IS 'Descrizione Controller (utilizzato in MVC)';
+
+COMMENT ON COLUMN TFNC.CODODR IS 'Numero per ordinamento della voce di menu';
+
+COMMENT ON COLUMN TFNC.CODUSRMOD IS 'Codice utente modificatore';
+
+COMMENT ON COLUMN TFNC.FLGMODTYP IS 'Tipo di modifica';
+
+COMMENT ON COLUMN TFNC.TMSLSTMOD IS 'Data di modifica';
+
+

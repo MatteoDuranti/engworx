@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:21709/WcfService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Domain" />
+  <xs:import schemaLocation="http://localhost:21709/WcfService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Service" />
+  <xs:import schemaLocation="http://localhost:21709/WcfService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Service.DataContracts" />
+  <xs:element name="MessageInputOf_TUSR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyIn" nillable="true" type="q1:TUSR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Service" name="HeadIn" nillable="true" type="q2:HeaderInput" />
+  <xs:element name="MessageOutputOf_TUSR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyOut" nillable="true" type="q3:TUSR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Service" name="HeadOut" nillable="true" type="q4:HeaderOutput" />
+  <xs:element name="MessageInputOf_GetFilteredOf_TUSR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Service.DataContracts" minOccurs="0" name="BodyIn" nillable="true" type="q5:GetFilteredOfTUSR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageOutputOf_IListOf_TUSR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyOut" nillable="true" type="q6:ArrayOfTUSR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageInputOf_GetFilteredOf_TROL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Service.DataContracts" minOccurs="0" name="BodyIn" nillable="true" type="q7:GetFilteredOfTROL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageOutputOf_IListOf_TROL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyOut" nillable="true" type="q8:ArrayOfTROL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageInputOf_TROL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyIn" nillable="true" type="q9:TROL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageOutputOf_TROL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyOut" nillable="true" type="q10:TROL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageOutputOf_ListOf_TROL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyOut" nillable="true" type="q11:ArrayOfTROL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageInputOf_TFNC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyIn" nillable="true" type="q12:TFNC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageOutputOf_ListOf_TFNC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyOut" nillable="true" type="q13:ArrayOfTFNC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageInputOf_TROLFNC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyIn" nillable="true" type="q14:TROLFNC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageOutputOf_TROLFNC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyOut" nillable="true" type="q15:TROLFNC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageInputOf_ListOf_TUSRROL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyIn" nillable="true" type="q16:ArrayOfTUSRROL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageOutputOf_TUSRROL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyOut" nillable="true" type="q17:TUSRROL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageOutputOf_ListOf_VMEN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyOut" nillable="true" type="q18:ArrayOfVMEN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckDbConnection">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckDbConnectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckDbConnectionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageInputOf_TSYSPAR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyIn" nillable="true" type="q19:TSYSPAR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageOutputOf_TSYSPAR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Domain" minOccurs="0" name="BodyOut" nillable="true" type="q20:TSYSPAR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
